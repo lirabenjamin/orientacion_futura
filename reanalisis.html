@@ -100,10 +100,60 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </head>
 
-<body class="fullcontent">
+<body>
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#reanalisis-de-datos" id="toc-reanalisis-de-datos" class="nav-link active" data-scroll-target="#reanalisis-de-datos">Reanalisis de Datos</a>
+  <ul class="collapse">
+  <li><a href="#limpieza-de-datos" id="toc-limpieza-de-datos" class="nav-link" data-scroll-target="#limpieza-de-datos">Limpieza de Datos</a></li>
+  <li><a href="#análisis-factorial-confirmatorio" id="toc-análisis-factorial-confirmatorio" class="nav-link" data-scroll-target="#análisis-factorial-confirmatorio">Análisis Factorial Confirmatorio</a>
+  <ul class="collapse">
+  <li><a href="#career-motivation" id="toc-career-motivation" class="nav-link" data-scroll-target="#career-motivation">Career Motivation</a></li>
+  <li><a href="#career-cognition" id="toc-career-cognition" class="nav-link" data-scroll-target="#career-cognition">Career Cognition</a></li>
+  <li><a href="#career-behavior" id="toc-career-behavior" class="nav-link" data-scroll-target="#career-behavior">Career Behavior</a></li>
+  <li><a href="#family-motivation" id="toc-family-motivation" class="nav-link" data-scroll-target="#family-motivation">Family Motivation</a></li>
+  <li><a href="#family-cognition" id="toc-family-cognition" class="nav-link" data-scroll-target="#family-cognition">Family Cognition</a></li>
+  <li><a href="#family-behavior" id="toc-family-behavior" class="nav-link" data-scroll-target="#family-behavior">Family Behavior</a></li>
+  <li><a href="#goals" id="toc-goals" class="nav-link" data-scroll-target="#goals">Goals</a></li>
+  <li><a href="#life-satisfaction" id="toc-life-satisfaction" class="nav-link" data-scroll-target="#life-satisfaction">Life Satisfaction</a></li>
+  <li><a href="#confiabilidades" id="toc-confiabilidades" class="nav-link" data-scroll-target="#confiabilidades">Confiabilidades</a></li>
+  </ul></li>
+  <li><a href="#descriptivos-y-correlaciones" id="toc-descriptivos-y-correlaciones" class="nav-link" data-scroll-target="#descriptivos-y-correlaciones">Descriptivos y Correlaciones</a>
+  <ul class="collapse">
+  <li><a href="#solo-carrera-con-variables-del-estudio" id="toc-solo-carrera-con-variables-del-estudio" class="nav-link" data-scroll-target="#solo-carrera-con-variables-del-estudio">Solo carrera con variables del estudio</a></li>
+  <li><a href="#solo-familia-con-variables-del-estudio" id="toc-solo-familia-con-variables-del-estudio" class="nav-link" data-scroll-target="#solo-familia-con-variables-del-estudio">Solo familia con variables del estudio</a></li>
+  <li><a href="#análisis-de-normalidad-de-las-variables" id="toc-análisis-de-normalidad-de-las-variables" class="nav-link" data-scroll-target="#análisis-de-normalidad-de-las-variables">Análisis de Normalidad de las Variables</a></li>
+  </ul></li>
+  <li><a href="#hypothetical-model" id="toc-hypothetical-model" class="nav-link" data-scroll-target="#hypothetical-model">Hypothetical Model</a></li>
+  <li><a href="#modelo-de-la-investigación---variables-latentes" id="toc-modelo-de-la-investigación---variables-latentes" class="nav-link" data-scroll-target="#modelo-de-la-investigación---variables-latentes">Modelo de la investigación - Variables Latentes</a>
+  <ul class="collapse">
+  <li><a href="#carrera" id="toc-carrera" class="nav-link" data-scroll-target="#carrera">Carrera</a></li>
+  <li><a href="#familia" id="toc-familia" class="nav-link" data-scroll-target="#familia">Familia</a></li>
+  </ul></li>
+  <li><a href="#modelo-de-la-investigación---variables-manifiestas" id="toc-modelo-de-la-investigación---variables-manifiestas" class="nav-link" data-scroll-target="#modelo-de-la-investigación---variables-manifiestas">Modelo de la investigación - Variables Manifiestas</a>
+  <ul class="collapse">
+  <li><a href="#carrera-1" id="toc-carrera-1" class="nav-link" data-scroll-target="#carrera-1">Carrera</a></li>
+  <li><a href="#familia-1" id="toc-familia-1" class="nav-link" data-scroll-target="#familia-1">Familia</a></li>
+  </ul></li>
+  <li><a href="#primer-orden" id="toc-primer-orden" class="nav-link" data-scroll-target="#primer-orden">Primer orden</a>
+  <ul class="collapse">
+  <li><a href="#carrera-2" id="toc-carrera-2" class="nav-link" data-scroll-target="#carrera-2">Carrera</a></li>
+  <li><a href="#familia-2" id="toc-familia-2" class="nav-link" data-scroll-target="#familia-2">Familia</a></li>
+  </ul></li>
+  <li><a href="#diferencias-por-sexo-y-universidad" id="toc-diferencias-por-sexo-y-universidad" class="nav-link" data-scroll-target="#diferencias-por-sexo-y-universidad">Diferencias por sexo y universidad</a>
+  <ul class="collapse">
+  <li><a href="#sexo" id="toc-sexo" class="nav-link" data-scroll-target="#sexo">Sexo</a></li>
+  <li><a href="#universidad" id="toc-universidad" class="nav-link" data-scroll-target="#universidad">Universidad</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -174,12 +224,12 @@ lavaan is FREE software! Please report any bugs.</code></pre>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_gt_table</span>(fit) <span class="sc">|&gt;</span> <span class="fu">sub_missing</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="cokpfiutzf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="rnottphloi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#cokpfiutzf) .gt_table {
+:where(#rnottphloi) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -204,7 +254,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-left-color: #D3D3D3;
 }
 
-:where(#cokpfiutzf) .gt_heading {
+:where(#rnottphloi) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -216,12 +266,12 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#cokpfiutzf) .gt_caption {
+:where(#rnottphloi) .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-:where(#cokpfiutzf) .gt_title {
+:where(#rnottphloi) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -233,7 +283,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-width: 0;
 }
 
-:where(#cokpfiutzf) .gt_subtitle {
+:where(#rnottphloi) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -245,13 +295,13 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-top-width: 0;
 }
 
-:where(#cokpfiutzf) .gt_bottom_border {
+:where(#rnottphloi) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#cokpfiutzf) .gt_col_headings {
+:where(#rnottphloi) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -266,7 +316,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#cokpfiutzf) .gt_col_heading {
+:where(#rnottphloi) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -286,7 +336,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   overflow-x: hidden;
 }
 
-:where(#cokpfiutzf) .gt_column_spanner_outer {
+:where(#rnottphloi) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -298,15 +348,15 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 4px;
 }
 
-:where(#cokpfiutzf) .gt_column_spanner_outer:first-child {
+:where(#rnottphloi) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#cokpfiutzf) .gt_column_spanner_outer:last-child {
+:where(#rnottphloi) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#cokpfiutzf) .gt_column_spanner {
+:where(#rnottphloi) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -318,7 +368,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   width: 100%;
 }
 
-:where(#cokpfiutzf) .gt_group_heading {
+:where(#rnottphloi) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -344,7 +394,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   text-align: left;
 }
 
-:where(#cokpfiutzf) .gt_empty_group_heading {
+:where(#rnottphloi) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -359,15 +409,15 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   vertical-align: middle;
 }
 
-:where(#cokpfiutzf) .gt_from_md > :first-child {
+:where(#rnottphloi) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#cokpfiutzf) .gt_from_md > :last-child {
+:where(#rnottphloi) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#cokpfiutzf) .gt_row {
+:where(#rnottphloi) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -386,7 +436,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   overflow-x: hidden;
 }
 
-:where(#cokpfiutzf) .gt_stub {
+:where(#rnottphloi) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -399,7 +449,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#cokpfiutzf) .gt_stub_row_group {
+:where(#rnottphloi) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -413,11 +463,11 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   vertical-align: top;
 }
 
-:where(#cokpfiutzf) .gt_row_group_first td {
+:where(#rnottphloi) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#cokpfiutzf) .gt_summary_row {
+:where(#rnottphloi) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -427,16 +477,16 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#cokpfiutzf) .gt_first_summary_row {
+:where(#rnottphloi) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#cokpfiutzf) .gt_first_summary_row.thick {
+:where(#rnottphloi) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#cokpfiutzf) .gt_last_summary_row {
+:where(#rnottphloi) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -446,7 +496,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#cokpfiutzf) .gt_grand_summary_row {
+:where(#rnottphloi) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -456,7 +506,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#cokpfiutzf) .gt_first_grand_summary_row {
+:where(#rnottphloi) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -466,11 +516,11 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-top-color: #D3D3D3;
 }
 
-:where(#cokpfiutzf) .gt_striped {
+:where(#rnottphloi) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#cokpfiutzf) .gt_table_body {
+:where(#rnottphloi) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -479,7 +529,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#cokpfiutzf) .gt_footnotes {
+:where(#rnottphloi) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -493,7 +543,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#cokpfiutzf) .gt_footnote {
+:where(#rnottphloi) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -502,7 +552,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#cokpfiutzf) .gt_sourcenotes {
+:where(#rnottphloi) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -516,7 +566,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#cokpfiutzf) .gt_sourcenote {
+:where(#rnottphloi) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -524,64 +574,64 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#cokpfiutzf) .gt_left {
+:where(#rnottphloi) .gt_left {
   text-align: left;
 }
 
-:where(#cokpfiutzf) .gt_center {
+:where(#rnottphloi) .gt_center {
   text-align: center;
 }
 
-:where(#cokpfiutzf) .gt_right {
+:where(#rnottphloi) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#cokpfiutzf) .gt_font_normal {
+:where(#rnottphloi) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#cokpfiutzf) .gt_font_bold {
+:where(#rnottphloi) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#cokpfiutzf) .gt_font_italic {
+:where(#rnottphloi) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#cokpfiutzf) .gt_super {
+:where(#rnottphloi) .gt_super {
   font-size: 65%;
 }
 
-:where(#cokpfiutzf) .gt_footnote_marks {
+:where(#rnottphloi) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#cokpfiutzf) .gt_asterisk {
+:where(#rnottphloi) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#cokpfiutzf) .gt_indent_1 {
+:where(#rnottphloi) .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#cokpfiutzf) .gt_indent_2 {
+:where(#rnottphloi) .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#cokpfiutzf) .gt_indent_3 {
+:where(#rnottphloi) .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#cokpfiutzf) .gt_indent_4 {
+:where(#rnottphloi) .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#cokpfiutzf) .gt_indent_5 {
+:where(#rnottphloi) .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -738,12 +788,12 @@ lavaan is FREE software! Please report any bugs.</code></pre>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_gt_table</span>(fit) <span class="sc">|&gt;</span> <span class="fu">sub_missing</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="ewwcqftsfl" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="amxpyycfdo" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#ewwcqftsfl) .gt_table {
+:where(#amxpyycfdo) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -768,7 +818,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-left-color: #D3D3D3;
 }
 
-:where(#ewwcqftsfl) .gt_heading {
+:where(#amxpyycfdo) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -780,12 +830,12 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#ewwcqftsfl) .gt_caption {
+:where(#amxpyycfdo) .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-:where(#ewwcqftsfl) .gt_title {
+:where(#amxpyycfdo) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -797,7 +847,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-width: 0;
 }
 
-:where(#ewwcqftsfl) .gt_subtitle {
+:where(#amxpyycfdo) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -809,13 +859,13 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-top-width: 0;
 }
 
-:where(#ewwcqftsfl) .gt_bottom_border {
+:where(#amxpyycfdo) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#ewwcqftsfl) .gt_col_headings {
+:where(#amxpyycfdo) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -830,7 +880,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#ewwcqftsfl) .gt_col_heading {
+:where(#amxpyycfdo) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -850,7 +900,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   overflow-x: hidden;
 }
 
-:where(#ewwcqftsfl) .gt_column_spanner_outer {
+:where(#amxpyycfdo) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -862,15 +912,15 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 4px;
 }
 
-:where(#ewwcqftsfl) .gt_column_spanner_outer:first-child {
+:where(#amxpyycfdo) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#ewwcqftsfl) .gt_column_spanner_outer:last-child {
+:where(#amxpyycfdo) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#ewwcqftsfl) .gt_column_spanner {
+:where(#amxpyycfdo) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -882,7 +932,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   width: 100%;
 }
 
-:where(#ewwcqftsfl) .gt_group_heading {
+:where(#amxpyycfdo) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -908,7 +958,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   text-align: left;
 }
 
-:where(#ewwcqftsfl) .gt_empty_group_heading {
+:where(#amxpyycfdo) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -923,15 +973,15 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   vertical-align: middle;
 }
 
-:where(#ewwcqftsfl) .gt_from_md > :first-child {
+:where(#amxpyycfdo) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#ewwcqftsfl) .gt_from_md > :last-child {
+:where(#amxpyycfdo) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#ewwcqftsfl) .gt_row {
+:where(#amxpyycfdo) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -950,7 +1000,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   overflow-x: hidden;
 }
 
-:where(#ewwcqftsfl) .gt_stub {
+:where(#amxpyycfdo) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -963,7 +1013,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#ewwcqftsfl) .gt_stub_row_group {
+:where(#amxpyycfdo) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -977,11 +1027,11 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   vertical-align: top;
 }
 
-:where(#ewwcqftsfl) .gt_row_group_first td {
+:where(#amxpyycfdo) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#ewwcqftsfl) .gt_summary_row {
+:where(#amxpyycfdo) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -991,16 +1041,16 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#ewwcqftsfl) .gt_first_summary_row {
+:where(#amxpyycfdo) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#ewwcqftsfl) .gt_first_summary_row.thick {
+:where(#amxpyycfdo) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#ewwcqftsfl) .gt_last_summary_row {
+:where(#amxpyycfdo) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1010,7 +1060,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#ewwcqftsfl) .gt_grand_summary_row {
+:where(#amxpyycfdo) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1020,7 +1070,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#ewwcqftsfl) .gt_first_grand_summary_row {
+:where(#amxpyycfdo) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1030,11 +1080,11 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-top-color: #D3D3D3;
 }
 
-:where(#ewwcqftsfl) .gt_striped {
+:where(#amxpyycfdo) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#ewwcqftsfl) .gt_table_body {
+:where(#amxpyycfdo) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1043,7 +1093,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#ewwcqftsfl) .gt_footnotes {
+:where(#amxpyycfdo) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1057,7 +1107,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#ewwcqftsfl) .gt_footnote {
+:where(#amxpyycfdo) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -1066,7 +1116,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#ewwcqftsfl) .gt_sourcenotes {
+:where(#amxpyycfdo) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1080,7 +1130,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#ewwcqftsfl) .gt_sourcenote {
+:where(#amxpyycfdo) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1088,64 +1138,64 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#ewwcqftsfl) .gt_left {
+:where(#amxpyycfdo) .gt_left {
   text-align: left;
 }
 
-:where(#ewwcqftsfl) .gt_center {
+:where(#amxpyycfdo) .gt_center {
   text-align: center;
 }
 
-:where(#ewwcqftsfl) .gt_right {
+:where(#amxpyycfdo) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#ewwcqftsfl) .gt_font_normal {
+:where(#amxpyycfdo) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#ewwcqftsfl) .gt_font_bold {
+:where(#amxpyycfdo) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#ewwcqftsfl) .gt_font_italic {
+:where(#amxpyycfdo) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#ewwcqftsfl) .gt_super {
+:where(#amxpyycfdo) .gt_super {
   font-size: 65%;
 }
 
-:where(#ewwcqftsfl) .gt_footnote_marks {
+:where(#amxpyycfdo) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#ewwcqftsfl) .gt_asterisk {
+:where(#amxpyycfdo) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#ewwcqftsfl) .gt_indent_1 {
+:where(#amxpyycfdo) .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#ewwcqftsfl) .gt_indent_2 {
+:where(#amxpyycfdo) .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#ewwcqftsfl) .gt_indent_3 {
+:where(#amxpyycfdo) .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#ewwcqftsfl) .gt_indent_4 {
+:where(#amxpyycfdo) .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#ewwcqftsfl) .gt_indent_5 {
+:where(#amxpyycfdo) .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1250,12 +1300,12 @@ lavaan is FREE software! Please report any bugs.</code></pre>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_gt_table</span>(fit) <span class="sc">|&gt;</span> <span class="fu">sub_missing</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="qdrpuksrfb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="tvysrcqxro" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#qdrpuksrfb) .gt_table {
+:where(#tvysrcqxro) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1280,7 +1330,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-left-color: #D3D3D3;
 }
 
-:where(#qdrpuksrfb) .gt_heading {
+:where(#tvysrcqxro) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1292,12 +1342,12 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#qdrpuksrfb) .gt_caption {
+:where(#tvysrcqxro) .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-:where(#qdrpuksrfb) .gt_title {
+:where(#tvysrcqxro) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1309,7 +1359,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-width: 0;
 }
 
-:where(#qdrpuksrfb) .gt_subtitle {
+:where(#tvysrcqxro) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1321,13 +1371,13 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-top-width: 0;
 }
 
-:where(#qdrpuksrfb) .gt_bottom_border {
+:where(#tvysrcqxro) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#qdrpuksrfb) .gt_col_headings {
+:where(#tvysrcqxro) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1342,7 +1392,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#qdrpuksrfb) .gt_col_heading {
+:where(#tvysrcqxro) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1362,7 +1412,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   overflow-x: hidden;
 }
 
-:where(#qdrpuksrfb) .gt_column_spanner_outer {
+:where(#tvysrcqxro) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1374,15 +1424,15 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 4px;
 }
 
-:where(#qdrpuksrfb) .gt_column_spanner_outer:first-child {
+:where(#tvysrcqxro) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#qdrpuksrfb) .gt_column_spanner_outer:last-child {
+:where(#tvysrcqxro) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#qdrpuksrfb) .gt_column_spanner {
+:where(#tvysrcqxro) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1394,7 +1444,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   width: 100%;
 }
 
-:where(#qdrpuksrfb) .gt_group_heading {
+:where(#tvysrcqxro) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1420,7 +1470,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   text-align: left;
 }
 
-:where(#qdrpuksrfb) .gt_empty_group_heading {
+:where(#tvysrcqxro) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1435,15 +1485,15 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   vertical-align: middle;
 }
 
-:where(#qdrpuksrfb) .gt_from_md > :first-child {
+:where(#tvysrcqxro) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#qdrpuksrfb) .gt_from_md > :last-child {
+:where(#tvysrcqxro) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#qdrpuksrfb) .gt_row {
+:where(#tvysrcqxro) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1462,7 +1512,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   overflow-x: hidden;
 }
 
-:where(#qdrpuksrfb) .gt_stub {
+:where(#tvysrcqxro) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1475,7 +1525,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#qdrpuksrfb) .gt_stub_row_group {
+:where(#tvysrcqxro) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1489,11 +1539,11 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   vertical-align: top;
 }
 
-:where(#qdrpuksrfb) .gt_row_group_first td {
+:where(#tvysrcqxro) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#qdrpuksrfb) .gt_summary_row {
+:where(#tvysrcqxro) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1503,16 +1553,16 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#qdrpuksrfb) .gt_first_summary_row {
+:where(#tvysrcqxro) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#qdrpuksrfb) .gt_first_summary_row.thick {
+:where(#tvysrcqxro) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#qdrpuksrfb) .gt_last_summary_row {
+:where(#tvysrcqxro) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1522,7 +1572,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#qdrpuksrfb) .gt_grand_summary_row {
+:where(#tvysrcqxro) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1532,7 +1582,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#qdrpuksrfb) .gt_first_grand_summary_row {
+:where(#tvysrcqxro) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1542,11 +1592,11 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-top-color: #D3D3D3;
 }
 
-:where(#qdrpuksrfb) .gt_striped {
+:where(#tvysrcqxro) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#qdrpuksrfb) .gt_table_body {
+:where(#tvysrcqxro) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1555,7 +1605,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#qdrpuksrfb) .gt_footnotes {
+:where(#tvysrcqxro) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1569,7 +1619,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#qdrpuksrfb) .gt_footnote {
+:where(#tvysrcqxro) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -1578,7 +1628,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#qdrpuksrfb) .gt_sourcenotes {
+:where(#tvysrcqxro) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1592,7 +1642,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#qdrpuksrfb) .gt_sourcenote {
+:where(#tvysrcqxro) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1600,64 +1650,64 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#qdrpuksrfb) .gt_left {
+:where(#tvysrcqxro) .gt_left {
   text-align: left;
 }
 
-:where(#qdrpuksrfb) .gt_center {
+:where(#tvysrcqxro) .gt_center {
   text-align: center;
 }
 
-:where(#qdrpuksrfb) .gt_right {
+:where(#tvysrcqxro) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#qdrpuksrfb) .gt_font_normal {
+:where(#tvysrcqxro) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#qdrpuksrfb) .gt_font_bold {
+:where(#tvysrcqxro) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#qdrpuksrfb) .gt_font_italic {
+:where(#tvysrcqxro) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#qdrpuksrfb) .gt_super {
+:where(#tvysrcqxro) .gt_super {
   font-size: 65%;
 }
 
-:where(#qdrpuksrfb) .gt_footnote_marks {
+:where(#tvysrcqxro) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#qdrpuksrfb) .gt_asterisk {
+:where(#tvysrcqxro) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#qdrpuksrfb) .gt_indent_1 {
+:where(#tvysrcqxro) .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#qdrpuksrfb) .gt_indent_2 {
+:where(#tvysrcqxro) .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#qdrpuksrfb) .gt_indent_3 {
+:where(#tvysrcqxro) .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#qdrpuksrfb) .gt_indent_4 {
+:where(#tvysrcqxro) .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#qdrpuksrfb) .gt_indent_5 {
+:where(#tvysrcqxro) .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1786,12 +1836,12 @@ lavaan is FREE software! Please report any bugs.</code></pre>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_gt_table</span>(fit) <span class="sc">|&gt;</span> <span class="fu">sub_missing</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="iebwpofhrw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="uwxqvyuxem" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#iebwpofhrw) .gt_table {
+:where(#uwxqvyuxem) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1816,7 +1866,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-left-color: #D3D3D3;
 }
 
-:where(#iebwpofhrw) .gt_heading {
+:where(#uwxqvyuxem) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1828,12 +1878,12 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#iebwpofhrw) .gt_caption {
+:where(#uwxqvyuxem) .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-:where(#iebwpofhrw) .gt_title {
+:where(#uwxqvyuxem) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1845,7 +1895,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-width: 0;
 }
 
-:where(#iebwpofhrw) .gt_subtitle {
+:where(#uwxqvyuxem) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1857,13 +1907,13 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-top-width: 0;
 }
 
-:where(#iebwpofhrw) .gt_bottom_border {
+:where(#uwxqvyuxem) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#iebwpofhrw) .gt_col_headings {
+:where(#uwxqvyuxem) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1878,7 +1928,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#iebwpofhrw) .gt_col_heading {
+:where(#uwxqvyuxem) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1898,7 +1948,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   overflow-x: hidden;
 }
 
-:where(#iebwpofhrw) .gt_column_spanner_outer {
+:where(#uwxqvyuxem) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1910,15 +1960,15 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 4px;
 }
 
-:where(#iebwpofhrw) .gt_column_spanner_outer:first-child {
+:where(#uwxqvyuxem) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#iebwpofhrw) .gt_column_spanner_outer:last-child {
+:where(#uwxqvyuxem) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#iebwpofhrw) .gt_column_spanner {
+:where(#uwxqvyuxem) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1930,7 +1980,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   width: 100%;
 }
 
-:where(#iebwpofhrw) .gt_group_heading {
+:where(#uwxqvyuxem) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1956,7 +2006,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   text-align: left;
 }
 
-:where(#iebwpofhrw) .gt_empty_group_heading {
+:where(#uwxqvyuxem) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1971,15 +2021,15 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   vertical-align: middle;
 }
 
-:where(#iebwpofhrw) .gt_from_md > :first-child {
+:where(#uwxqvyuxem) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#iebwpofhrw) .gt_from_md > :last-child {
+:where(#uwxqvyuxem) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#iebwpofhrw) .gt_row {
+:where(#uwxqvyuxem) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1998,7 +2048,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   overflow-x: hidden;
 }
 
-:where(#iebwpofhrw) .gt_stub {
+:where(#uwxqvyuxem) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2011,7 +2061,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#iebwpofhrw) .gt_stub_row_group {
+:where(#uwxqvyuxem) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2025,11 +2075,11 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   vertical-align: top;
 }
 
-:where(#iebwpofhrw) .gt_row_group_first td {
+:where(#uwxqvyuxem) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#iebwpofhrw) .gt_summary_row {
+:where(#uwxqvyuxem) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2039,16 +2089,16 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#iebwpofhrw) .gt_first_summary_row {
+:where(#uwxqvyuxem) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#iebwpofhrw) .gt_first_summary_row.thick {
+:where(#uwxqvyuxem) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#iebwpofhrw) .gt_last_summary_row {
+:where(#uwxqvyuxem) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2058,7 +2108,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#iebwpofhrw) .gt_grand_summary_row {
+:where(#uwxqvyuxem) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2068,7 +2118,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#iebwpofhrw) .gt_first_grand_summary_row {
+:where(#uwxqvyuxem) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2078,11 +2128,11 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-top-color: #D3D3D3;
 }
 
-:where(#iebwpofhrw) .gt_striped {
+:where(#uwxqvyuxem) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#iebwpofhrw) .gt_table_body {
+:where(#uwxqvyuxem) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2091,7 +2141,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#iebwpofhrw) .gt_footnotes {
+:where(#uwxqvyuxem) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2105,7 +2155,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#iebwpofhrw) .gt_footnote {
+:where(#uwxqvyuxem) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -2114,7 +2164,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#iebwpofhrw) .gt_sourcenotes {
+:where(#uwxqvyuxem) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2128,7 +2178,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#iebwpofhrw) .gt_sourcenote {
+:where(#uwxqvyuxem) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2136,64 +2186,64 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#iebwpofhrw) .gt_left {
+:where(#uwxqvyuxem) .gt_left {
   text-align: left;
 }
 
-:where(#iebwpofhrw) .gt_center {
+:where(#uwxqvyuxem) .gt_center {
   text-align: center;
 }
 
-:where(#iebwpofhrw) .gt_right {
+:where(#uwxqvyuxem) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#iebwpofhrw) .gt_font_normal {
+:where(#uwxqvyuxem) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#iebwpofhrw) .gt_font_bold {
+:where(#uwxqvyuxem) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#iebwpofhrw) .gt_font_italic {
+:where(#uwxqvyuxem) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#iebwpofhrw) .gt_super {
+:where(#uwxqvyuxem) .gt_super {
   font-size: 65%;
 }
 
-:where(#iebwpofhrw) .gt_footnote_marks {
+:where(#uwxqvyuxem) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#iebwpofhrw) .gt_asterisk {
+:where(#uwxqvyuxem) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#iebwpofhrw) .gt_indent_1 {
+:where(#uwxqvyuxem) .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#iebwpofhrw) .gt_indent_2 {
+:where(#uwxqvyuxem) .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#iebwpofhrw) .gt_indent_3 {
+:where(#uwxqvyuxem) .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#iebwpofhrw) .gt_indent_4 {
+:where(#uwxqvyuxem) .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#iebwpofhrw) .gt_indent_5 {
+:where(#uwxqvyuxem) .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -2350,12 +2400,12 @@ lavaan is FREE software! Please report any bugs.</code></pre>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_gt_table</span>(fit) <span class="sc">|&gt;</span> <span class="fu">sub_missing</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="ycbibfjjfz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="ziwcqguufr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#ycbibfjjfz) .gt_table {
+:where(#ziwcqguufr) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -2380,7 +2430,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-left-color: #D3D3D3;
 }
 
-:where(#ycbibfjjfz) .gt_heading {
+:where(#ziwcqguufr) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2392,12 +2442,12 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#ycbibfjjfz) .gt_caption {
+:where(#ziwcqguufr) .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-:where(#ycbibfjjfz) .gt_title {
+:where(#ziwcqguufr) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2409,7 +2459,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-width: 0;
 }
 
-:where(#ycbibfjjfz) .gt_subtitle {
+:where(#ziwcqguufr) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2421,13 +2471,13 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-top-width: 0;
 }
 
-:where(#ycbibfjjfz) .gt_bottom_border {
+:where(#ziwcqguufr) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#ycbibfjjfz) .gt_col_headings {
+:where(#ziwcqguufr) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2442,7 +2492,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#ycbibfjjfz) .gt_col_heading {
+:where(#ziwcqguufr) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2462,7 +2512,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   overflow-x: hidden;
 }
 
-:where(#ycbibfjjfz) .gt_column_spanner_outer {
+:where(#ziwcqguufr) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2474,15 +2524,15 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 4px;
 }
 
-:where(#ycbibfjjfz) .gt_column_spanner_outer:first-child {
+:where(#ziwcqguufr) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#ycbibfjjfz) .gt_column_spanner_outer:last-child {
+:where(#ziwcqguufr) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#ycbibfjjfz) .gt_column_spanner {
+:where(#ziwcqguufr) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2494,7 +2544,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   width: 100%;
 }
 
-:where(#ycbibfjjfz) .gt_group_heading {
+:where(#ziwcqguufr) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2520,7 +2570,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   text-align: left;
 }
 
-:where(#ycbibfjjfz) .gt_empty_group_heading {
+:where(#ziwcqguufr) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2535,15 +2585,15 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   vertical-align: middle;
 }
 
-:where(#ycbibfjjfz) .gt_from_md > :first-child {
+:where(#ziwcqguufr) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#ycbibfjjfz) .gt_from_md > :last-child {
+:where(#ziwcqguufr) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#ycbibfjjfz) .gt_row {
+:where(#ziwcqguufr) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2562,7 +2612,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   overflow-x: hidden;
 }
 
-:where(#ycbibfjjfz) .gt_stub {
+:where(#ziwcqguufr) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2575,7 +2625,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#ycbibfjjfz) .gt_stub_row_group {
+:where(#ziwcqguufr) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2589,11 +2639,11 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   vertical-align: top;
 }
 
-:where(#ycbibfjjfz) .gt_row_group_first td {
+:where(#ziwcqguufr) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#ycbibfjjfz) .gt_summary_row {
+:where(#ziwcqguufr) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2603,16 +2653,16 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#ycbibfjjfz) .gt_first_summary_row {
+:where(#ziwcqguufr) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#ycbibfjjfz) .gt_first_summary_row.thick {
+:where(#ziwcqguufr) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#ycbibfjjfz) .gt_last_summary_row {
+:where(#ziwcqguufr) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2622,7 +2672,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#ycbibfjjfz) .gt_grand_summary_row {
+:where(#ziwcqguufr) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2632,7 +2682,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#ycbibfjjfz) .gt_first_grand_summary_row {
+:where(#ziwcqguufr) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2642,11 +2692,11 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-top-color: #D3D3D3;
 }
 
-:where(#ycbibfjjfz) .gt_striped {
+:where(#ziwcqguufr) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#ycbibfjjfz) .gt_table_body {
+:where(#ziwcqguufr) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2655,7 +2705,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#ycbibfjjfz) .gt_footnotes {
+:where(#ziwcqguufr) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2669,7 +2719,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#ycbibfjjfz) .gt_footnote {
+:where(#ziwcqguufr) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -2678,7 +2728,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#ycbibfjjfz) .gt_sourcenotes {
+:where(#ziwcqguufr) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2692,7 +2742,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#ycbibfjjfz) .gt_sourcenote {
+:where(#ziwcqguufr) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2700,64 +2750,64 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#ycbibfjjfz) .gt_left {
+:where(#ziwcqguufr) .gt_left {
   text-align: left;
 }
 
-:where(#ycbibfjjfz) .gt_center {
+:where(#ziwcqguufr) .gt_center {
   text-align: center;
 }
 
-:where(#ycbibfjjfz) .gt_right {
+:where(#ziwcqguufr) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#ycbibfjjfz) .gt_font_normal {
+:where(#ziwcqguufr) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#ycbibfjjfz) .gt_font_bold {
+:where(#ziwcqguufr) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#ycbibfjjfz) .gt_font_italic {
+:where(#ziwcqguufr) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#ycbibfjjfz) .gt_super {
+:where(#ziwcqguufr) .gt_super {
   font-size: 65%;
 }
 
-:where(#ycbibfjjfz) .gt_footnote_marks {
+:where(#ziwcqguufr) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#ycbibfjjfz) .gt_asterisk {
+:where(#ziwcqguufr) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#ycbibfjjfz) .gt_indent_1 {
+:where(#ziwcqguufr) .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#ycbibfjjfz) .gt_indent_2 {
+:where(#ziwcqguufr) .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#ycbibfjjfz) .gt_indent_3 {
+:where(#ziwcqguufr) .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#ycbibfjjfz) .gt_indent_4 {
+:where(#ziwcqguufr) .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#ycbibfjjfz) .gt_indent_5 {
+:where(#ziwcqguufr) .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -2862,12 +2912,12 @@ lavaan is FREE software! Please report any bugs.</code></pre>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_gt_table</span>(fit) <span class="sc">|&gt;</span> <span class="fu">sub_missing</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="zggmuiusri" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="tplvmjvlvd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#zggmuiusri) .gt_table {
+:where(#tplvmjvlvd) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -2892,7 +2942,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-left-color: #D3D3D3;
 }
 
-:where(#zggmuiusri) .gt_heading {
+:where(#tplvmjvlvd) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2904,12 +2954,12 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#zggmuiusri) .gt_caption {
+:where(#tplvmjvlvd) .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-:where(#zggmuiusri) .gt_title {
+:where(#tplvmjvlvd) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2921,7 +2971,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-width: 0;
 }
 
-:where(#zggmuiusri) .gt_subtitle {
+:where(#tplvmjvlvd) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2933,13 +2983,13 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-top-width: 0;
 }
 
-:where(#zggmuiusri) .gt_bottom_border {
+:where(#tplvmjvlvd) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#zggmuiusri) .gt_col_headings {
+:where(#tplvmjvlvd) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2954,7 +3004,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#zggmuiusri) .gt_col_heading {
+:where(#tplvmjvlvd) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2974,7 +3024,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   overflow-x: hidden;
 }
 
-:where(#zggmuiusri) .gt_column_spanner_outer {
+:where(#tplvmjvlvd) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2986,15 +3036,15 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 4px;
 }
 
-:where(#zggmuiusri) .gt_column_spanner_outer:first-child {
+:where(#tplvmjvlvd) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#zggmuiusri) .gt_column_spanner_outer:last-child {
+:where(#tplvmjvlvd) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#zggmuiusri) .gt_column_spanner {
+:where(#tplvmjvlvd) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -3006,7 +3056,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   width: 100%;
 }
 
-:where(#zggmuiusri) .gt_group_heading {
+:where(#tplvmjvlvd) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3032,7 +3082,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   text-align: left;
 }
 
-:where(#zggmuiusri) .gt_empty_group_heading {
+:where(#tplvmjvlvd) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -3047,15 +3097,15 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   vertical-align: middle;
 }
 
-:where(#zggmuiusri) .gt_from_md > :first-child {
+:where(#tplvmjvlvd) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#zggmuiusri) .gt_from_md > :last-child {
+:where(#tplvmjvlvd) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#zggmuiusri) .gt_row {
+:where(#tplvmjvlvd) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3074,7 +3124,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   overflow-x: hidden;
 }
 
-:where(#zggmuiusri) .gt_stub {
+:where(#tplvmjvlvd) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3087,7 +3137,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#zggmuiusri) .gt_stub_row_group {
+:where(#tplvmjvlvd) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3101,11 +3151,11 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   vertical-align: top;
 }
 
-:where(#zggmuiusri) .gt_row_group_first td {
+:where(#tplvmjvlvd) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#zggmuiusri) .gt_summary_row {
+:where(#tplvmjvlvd) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3115,16 +3165,16 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#zggmuiusri) .gt_first_summary_row {
+:where(#tplvmjvlvd) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#zggmuiusri) .gt_first_summary_row.thick {
+:where(#tplvmjvlvd) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#zggmuiusri) .gt_last_summary_row {
+:where(#tplvmjvlvd) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3134,7 +3184,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#zggmuiusri) .gt_grand_summary_row {
+:where(#tplvmjvlvd) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3144,7 +3194,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#zggmuiusri) .gt_first_grand_summary_row {
+:where(#tplvmjvlvd) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3154,11 +3204,11 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-top-color: #D3D3D3;
 }
 
-:where(#zggmuiusri) .gt_striped {
+:where(#tplvmjvlvd) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#zggmuiusri) .gt_table_body {
+:where(#tplvmjvlvd) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3167,7 +3217,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#zggmuiusri) .gt_footnotes {
+:where(#tplvmjvlvd) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3181,7 +3231,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#zggmuiusri) .gt_footnote {
+:where(#tplvmjvlvd) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -3190,7 +3240,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#zggmuiusri) .gt_sourcenotes {
+:where(#tplvmjvlvd) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3204,7 +3254,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#zggmuiusri) .gt_sourcenote {
+:where(#tplvmjvlvd) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -3212,64 +3262,64 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#zggmuiusri) .gt_left {
+:where(#tplvmjvlvd) .gt_left {
   text-align: left;
 }
 
-:where(#zggmuiusri) .gt_center {
+:where(#tplvmjvlvd) .gt_center {
   text-align: center;
 }
 
-:where(#zggmuiusri) .gt_right {
+:where(#tplvmjvlvd) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#zggmuiusri) .gt_font_normal {
+:where(#tplvmjvlvd) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#zggmuiusri) .gt_font_bold {
+:where(#tplvmjvlvd) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#zggmuiusri) .gt_font_italic {
+:where(#tplvmjvlvd) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#zggmuiusri) .gt_super {
+:where(#tplvmjvlvd) .gt_super {
   font-size: 65%;
 }
 
-:where(#zggmuiusri) .gt_footnote_marks {
+:where(#tplvmjvlvd) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#zggmuiusri) .gt_asterisk {
+:where(#tplvmjvlvd) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#zggmuiusri) .gt_indent_1 {
+:where(#tplvmjvlvd) .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#zggmuiusri) .gt_indent_2 {
+:where(#tplvmjvlvd) .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#zggmuiusri) .gt_indent_3 {
+:where(#tplvmjvlvd) .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#zggmuiusri) .gt_indent_4 {
+:where(#tplvmjvlvd) .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#zggmuiusri) .gt_indent_5 {
+:where(#tplvmjvlvd) .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -3386,12 +3436,12 @@ lavaan is FREE software! Please report any bugs.</code></pre>
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_gt_table</span>(fit) <span class="sc">|&gt;</span> <span class="fu">sub_missing</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="ijulqhakev" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="sahthyrdwf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#ijulqhakev) .gt_table {
+:where(#sahthyrdwf) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -3416,7 +3466,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-left-color: #D3D3D3;
 }
 
-:where(#ijulqhakev) .gt_heading {
+:where(#sahthyrdwf) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -3428,12 +3478,12 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#ijulqhakev) .gt_caption {
+:where(#sahthyrdwf) .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-:where(#ijulqhakev) .gt_title {
+:where(#sahthyrdwf) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -3445,7 +3495,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-width: 0;
 }
 
-:where(#ijulqhakev) .gt_subtitle {
+:where(#sahthyrdwf) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -3457,13 +3507,13 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-top-width: 0;
 }
 
-:where(#ijulqhakev) .gt_bottom_border {
+:where(#sahthyrdwf) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#ijulqhakev) .gt_col_headings {
+:where(#sahthyrdwf) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3478,7 +3528,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#ijulqhakev) .gt_col_heading {
+:where(#sahthyrdwf) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3498,7 +3548,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   overflow-x: hidden;
 }
 
-:where(#ijulqhakev) .gt_column_spanner_outer {
+:where(#sahthyrdwf) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3510,15 +3560,15 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 4px;
 }
 
-:where(#ijulqhakev) .gt_column_spanner_outer:first-child {
+:where(#sahthyrdwf) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#ijulqhakev) .gt_column_spanner_outer:last-child {
+:where(#sahthyrdwf) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#ijulqhakev) .gt_column_spanner {
+:where(#sahthyrdwf) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -3530,7 +3580,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   width: 100%;
 }
 
-:where(#ijulqhakev) .gt_group_heading {
+:where(#sahthyrdwf) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3556,7 +3606,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   text-align: left;
 }
 
-:where(#ijulqhakev) .gt_empty_group_heading {
+:where(#sahthyrdwf) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -3571,15 +3621,15 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   vertical-align: middle;
 }
 
-:where(#ijulqhakev) .gt_from_md > :first-child {
+:where(#sahthyrdwf) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#ijulqhakev) .gt_from_md > :last-child {
+:where(#sahthyrdwf) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#ijulqhakev) .gt_row {
+:where(#sahthyrdwf) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3598,7 +3648,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   overflow-x: hidden;
 }
 
-:where(#ijulqhakev) .gt_stub {
+:where(#sahthyrdwf) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3611,7 +3661,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#ijulqhakev) .gt_stub_row_group {
+:where(#sahthyrdwf) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3625,11 +3675,11 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   vertical-align: top;
 }
 
-:where(#ijulqhakev) .gt_row_group_first td {
+:where(#sahthyrdwf) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#ijulqhakev) .gt_summary_row {
+:where(#sahthyrdwf) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3639,16 +3689,16 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#ijulqhakev) .gt_first_summary_row {
+:where(#sahthyrdwf) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#ijulqhakev) .gt_first_summary_row.thick {
+:where(#sahthyrdwf) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#ijulqhakev) .gt_last_summary_row {
+:where(#sahthyrdwf) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3658,7 +3708,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#ijulqhakev) .gt_grand_summary_row {
+:where(#sahthyrdwf) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3668,7 +3718,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#ijulqhakev) .gt_first_grand_summary_row {
+:where(#sahthyrdwf) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3678,11 +3728,11 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-top-color: #D3D3D3;
 }
 
-:where(#ijulqhakev) .gt_striped {
+:where(#sahthyrdwf) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#ijulqhakev) .gt_table_body {
+:where(#sahthyrdwf) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3691,7 +3741,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#ijulqhakev) .gt_footnotes {
+:where(#sahthyrdwf) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3705,7 +3755,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#ijulqhakev) .gt_footnote {
+:where(#sahthyrdwf) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -3714,7 +3764,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#ijulqhakev) .gt_sourcenotes {
+:where(#sahthyrdwf) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3728,7 +3778,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#ijulqhakev) .gt_sourcenote {
+:where(#sahthyrdwf) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -3736,64 +3786,64 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#ijulqhakev) .gt_left {
+:where(#sahthyrdwf) .gt_left {
   text-align: left;
 }
 
-:where(#ijulqhakev) .gt_center {
+:where(#sahthyrdwf) .gt_center {
   text-align: center;
 }
 
-:where(#ijulqhakev) .gt_right {
+:where(#sahthyrdwf) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#ijulqhakev) .gt_font_normal {
+:where(#sahthyrdwf) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#ijulqhakev) .gt_font_bold {
+:where(#sahthyrdwf) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#ijulqhakev) .gt_font_italic {
+:where(#sahthyrdwf) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#ijulqhakev) .gt_super {
+:where(#sahthyrdwf) .gt_super {
   font-size: 65%;
 }
 
-:where(#ijulqhakev) .gt_footnote_marks {
+:where(#sahthyrdwf) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#ijulqhakev) .gt_asterisk {
+:where(#sahthyrdwf) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#ijulqhakev) .gt_indent_1 {
+:where(#sahthyrdwf) .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#ijulqhakev) .gt_indent_2 {
+:where(#sahthyrdwf) .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#ijulqhakev) .gt_indent_3 {
+:where(#sahthyrdwf) .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#ijulqhakev) .gt_indent_4 {
+:where(#sahthyrdwf) .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#ijulqhakev) .gt_indent_5 {
+:where(#sahthyrdwf) .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -3922,12 +3972,12 @@ lavaan is FREE software! Please report any bugs.</code></pre>
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_gt_table</span>(fit) <span class="sc">|&gt;</span> <span class="fu">sub_missing</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="liyucjycht" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="bdyhmdcrnp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#liyucjycht) .gt_table {
+:where(#bdyhmdcrnp) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -3952,7 +4002,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-left-color: #D3D3D3;
 }
 
-:where(#liyucjycht) .gt_heading {
+:where(#bdyhmdcrnp) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -3964,12 +4014,12 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#liyucjycht) .gt_caption {
+:where(#bdyhmdcrnp) .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-:where(#liyucjycht) .gt_title {
+:where(#bdyhmdcrnp) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -3981,7 +4031,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-width: 0;
 }
 
-:where(#liyucjycht) .gt_subtitle {
+:where(#bdyhmdcrnp) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -3993,13 +4043,13 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-top-width: 0;
 }
 
-:where(#liyucjycht) .gt_bottom_border {
+:where(#bdyhmdcrnp) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#liyucjycht) .gt_col_headings {
+:where(#bdyhmdcrnp) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -4014,7 +4064,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#liyucjycht) .gt_col_heading {
+:where(#bdyhmdcrnp) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4034,7 +4084,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   overflow-x: hidden;
 }
 
-:where(#liyucjycht) .gt_column_spanner_outer {
+:where(#bdyhmdcrnp) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4046,15 +4096,15 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 4px;
 }
 
-:where(#liyucjycht) .gt_column_spanner_outer:first-child {
+:where(#bdyhmdcrnp) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#liyucjycht) .gt_column_spanner_outer:last-child {
+:where(#bdyhmdcrnp) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#liyucjycht) .gt_column_spanner {
+:where(#bdyhmdcrnp) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -4066,7 +4116,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   width: 100%;
 }
 
-:where(#liyucjycht) .gt_group_heading {
+:where(#bdyhmdcrnp) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4092,7 +4142,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   text-align: left;
 }
 
-:where(#liyucjycht) .gt_empty_group_heading {
+:where(#bdyhmdcrnp) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -4107,15 +4157,15 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   vertical-align: middle;
 }
 
-:where(#liyucjycht) .gt_from_md > :first-child {
+:where(#bdyhmdcrnp) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#liyucjycht) .gt_from_md > :last-child {
+:where(#bdyhmdcrnp) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#liyucjycht) .gt_row {
+:where(#bdyhmdcrnp) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4134,7 +4184,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   overflow-x: hidden;
 }
 
-:where(#liyucjycht) .gt_stub {
+:where(#bdyhmdcrnp) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4147,7 +4197,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#liyucjycht) .gt_stub_row_group {
+:where(#bdyhmdcrnp) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4161,11 +4211,11 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   vertical-align: top;
 }
 
-:where(#liyucjycht) .gt_row_group_first td {
+:where(#bdyhmdcrnp) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#liyucjycht) .gt_summary_row {
+:where(#bdyhmdcrnp) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -4175,16 +4225,16 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#liyucjycht) .gt_first_summary_row {
+:where(#bdyhmdcrnp) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#liyucjycht) .gt_first_summary_row.thick {
+:where(#bdyhmdcrnp) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#liyucjycht) .gt_last_summary_row {
+:where(#bdyhmdcrnp) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4194,7 +4244,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#liyucjycht) .gt_grand_summary_row {
+:where(#bdyhmdcrnp) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -4204,7 +4254,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#liyucjycht) .gt_first_grand_summary_row {
+:where(#bdyhmdcrnp) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4214,11 +4264,11 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-top-color: #D3D3D3;
 }
 
-:where(#liyucjycht) .gt_striped {
+:where(#bdyhmdcrnp) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#liyucjycht) .gt_table_body {
+:where(#bdyhmdcrnp) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -4227,7 +4277,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#liyucjycht) .gt_footnotes {
+:where(#bdyhmdcrnp) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -4241,7 +4291,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#liyucjycht) .gt_footnote {
+:where(#bdyhmdcrnp) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -4250,7 +4300,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#liyucjycht) .gt_sourcenotes {
+:where(#bdyhmdcrnp) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -4264,7 +4314,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#liyucjycht) .gt_sourcenote {
+:where(#bdyhmdcrnp) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -4272,64 +4322,64 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#liyucjycht) .gt_left {
+:where(#bdyhmdcrnp) .gt_left {
   text-align: left;
 }
 
-:where(#liyucjycht) .gt_center {
+:where(#bdyhmdcrnp) .gt_center {
   text-align: center;
 }
 
-:where(#liyucjycht) .gt_right {
+:where(#bdyhmdcrnp) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#liyucjycht) .gt_font_normal {
+:where(#bdyhmdcrnp) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#liyucjycht) .gt_font_bold {
+:where(#bdyhmdcrnp) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#liyucjycht) .gt_font_italic {
+:where(#bdyhmdcrnp) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#liyucjycht) .gt_super {
+:where(#bdyhmdcrnp) .gt_super {
   font-size: 65%;
 }
 
-:where(#liyucjycht) .gt_footnote_marks {
+:where(#bdyhmdcrnp) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#liyucjycht) .gt_asterisk {
+:where(#bdyhmdcrnp) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#liyucjycht) .gt_indent_1 {
+:where(#bdyhmdcrnp) .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#liyucjycht) .gt_indent_2 {
+:where(#bdyhmdcrnp) .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#liyucjycht) .gt_indent_3 {
+:where(#bdyhmdcrnp) .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#liyucjycht) .gt_indent_4 {
+:where(#bdyhmdcrnp) .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#liyucjycht) .gt_indent_5 {
+:where(#bdyhmdcrnp) .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -4437,12 +4487,12 @@ lavaan is FREE software! Please report any bugs.</code></pre>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>alphas <span class="sc">|&gt;</span> <span class="fu">select</span>(value, alfa) <span class="sc">|&gt;</span> <span class="fu">gt</span>() <span class="sc">|&gt;</span> <span class="fu">fmt_number</span>(<span class="dv">2</span>, <span class="at">decimals =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="jrrwzjmxdo" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="geudrjaagl" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#jrrwzjmxdo) .gt_table {
+:where(#geudrjaagl) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -4467,7 +4517,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-left-color: #D3D3D3;
 }
 
-:where(#jrrwzjmxdo) .gt_heading {
+:where(#geudrjaagl) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -4479,12 +4529,12 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#jrrwzjmxdo) .gt_caption {
+:where(#geudrjaagl) .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-:where(#jrrwzjmxdo) .gt_title {
+:where(#geudrjaagl) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -4496,7 +4546,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-width: 0;
 }
 
-:where(#jrrwzjmxdo) .gt_subtitle {
+:where(#geudrjaagl) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -4508,13 +4558,13 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-top-width: 0;
 }
 
-:where(#jrrwzjmxdo) .gt_bottom_border {
+:where(#geudrjaagl) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#jrrwzjmxdo) .gt_col_headings {
+:where(#geudrjaagl) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -4529,7 +4579,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#jrrwzjmxdo) .gt_col_heading {
+:where(#geudrjaagl) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4549,7 +4599,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   overflow-x: hidden;
 }
 
-:where(#jrrwzjmxdo) .gt_column_spanner_outer {
+:where(#geudrjaagl) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4561,15 +4611,15 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 4px;
 }
 
-:where(#jrrwzjmxdo) .gt_column_spanner_outer:first-child {
+:where(#geudrjaagl) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#jrrwzjmxdo) .gt_column_spanner_outer:last-child {
+:where(#geudrjaagl) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#jrrwzjmxdo) .gt_column_spanner {
+:where(#geudrjaagl) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -4581,7 +4631,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   width: 100%;
 }
 
-:where(#jrrwzjmxdo) .gt_group_heading {
+:where(#geudrjaagl) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4607,7 +4657,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   text-align: left;
 }
 
-:where(#jrrwzjmxdo) .gt_empty_group_heading {
+:where(#geudrjaagl) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -4622,15 +4672,15 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   vertical-align: middle;
 }
 
-:where(#jrrwzjmxdo) .gt_from_md > :first-child {
+:where(#geudrjaagl) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#jrrwzjmxdo) .gt_from_md > :last-child {
+:where(#geudrjaagl) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#jrrwzjmxdo) .gt_row {
+:where(#geudrjaagl) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4649,7 +4699,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   overflow-x: hidden;
 }
 
-:where(#jrrwzjmxdo) .gt_stub {
+:where(#geudrjaagl) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4662,7 +4712,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#jrrwzjmxdo) .gt_stub_row_group {
+:where(#geudrjaagl) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4676,11 +4726,11 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   vertical-align: top;
 }
 
-:where(#jrrwzjmxdo) .gt_row_group_first td {
+:where(#geudrjaagl) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#jrrwzjmxdo) .gt_summary_row {
+:where(#geudrjaagl) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -4690,16 +4740,16 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#jrrwzjmxdo) .gt_first_summary_row {
+:where(#geudrjaagl) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#jrrwzjmxdo) .gt_first_summary_row.thick {
+:where(#geudrjaagl) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#jrrwzjmxdo) .gt_last_summary_row {
+:where(#geudrjaagl) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4709,7 +4759,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#jrrwzjmxdo) .gt_grand_summary_row {
+:where(#geudrjaagl) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -4719,7 +4769,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#jrrwzjmxdo) .gt_first_grand_summary_row {
+:where(#geudrjaagl) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4729,11 +4779,11 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-top-color: #D3D3D3;
 }
 
-:where(#jrrwzjmxdo) .gt_striped {
+:where(#geudrjaagl) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#jrrwzjmxdo) .gt_table_body {
+:where(#geudrjaagl) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -4742,7 +4792,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#jrrwzjmxdo) .gt_footnotes {
+:where(#geudrjaagl) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -4756,7 +4806,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#jrrwzjmxdo) .gt_footnote {
+:where(#geudrjaagl) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -4765,7 +4815,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#jrrwzjmxdo) .gt_sourcenotes {
+:where(#geudrjaagl) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -4779,7 +4829,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#jrrwzjmxdo) .gt_sourcenote {
+:where(#geudrjaagl) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -4787,64 +4837,64 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#jrrwzjmxdo) .gt_left {
+:where(#geudrjaagl) .gt_left {
   text-align: left;
 }
 
-:where(#jrrwzjmxdo) .gt_center {
+:where(#geudrjaagl) .gt_center {
   text-align: center;
 }
 
-:where(#jrrwzjmxdo) .gt_right {
+:where(#geudrjaagl) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#jrrwzjmxdo) .gt_font_normal {
+:where(#geudrjaagl) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#jrrwzjmxdo) .gt_font_bold {
+:where(#geudrjaagl) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#jrrwzjmxdo) .gt_font_italic {
+:where(#geudrjaagl) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#jrrwzjmxdo) .gt_super {
+:where(#geudrjaagl) .gt_super {
   font-size: 65%;
 }
 
-:where(#jrrwzjmxdo) .gt_footnote_marks {
+:where(#geudrjaagl) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#jrrwzjmxdo) .gt_asterisk {
+:where(#geudrjaagl) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#jrrwzjmxdo) .gt_indent_1 {
+:where(#geudrjaagl) .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#jrrwzjmxdo) .gt_indent_2 {
+:where(#geudrjaagl) .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#jrrwzjmxdo) .gt_indent_3 {
+:where(#geudrjaagl) .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#jrrwzjmxdo) .gt_indent_4 {
+:where(#geudrjaagl) .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#jrrwzjmxdo) .gt_indent_5 {
+:where(#geudrjaagl) .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -4919,12 +4969,12 @@ lavaan is FREE software! Please report any bugs.</code></pre>
 <div class="cell">
 <div class="cell-output-display">
 
-<div id="mqkuownfse" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="yvwacgyuli" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#mqkuownfse) .gt_table {
+:where(#yvwacgyuli) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -4949,7 +4999,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-left-color: #D3D3D3;
 }
 
-:where(#mqkuownfse) .gt_heading {
+:where(#yvwacgyuli) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -4961,12 +5011,12 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#mqkuownfse) .gt_caption {
+:where(#yvwacgyuli) .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-:where(#mqkuownfse) .gt_title {
+:where(#yvwacgyuli) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -4978,7 +5028,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-width: 0;
 }
 
-:where(#mqkuownfse) .gt_subtitle {
+:where(#yvwacgyuli) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -4990,13 +5040,13 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-top-width: 0;
 }
 
-:where(#mqkuownfse) .gt_bottom_border {
+:where(#yvwacgyuli) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#mqkuownfse) .gt_col_headings {
+:where(#yvwacgyuli) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -5011,7 +5061,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#mqkuownfse) .gt_col_heading {
+:where(#yvwacgyuli) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -5031,7 +5081,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   overflow-x: hidden;
 }
 
-:where(#mqkuownfse) .gt_column_spanner_outer {
+:where(#yvwacgyuli) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -5043,15 +5093,15 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 4px;
 }
 
-:where(#mqkuownfse) .gt_column_spanner_outer:first-child {
+:where(#yvwacgyuli) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#mqkuownfse) .gt_column_spanner_outer:last-child {
+:where(#yvwacgyuli) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#mqkuownfse) .gt_column_spanner {
+:where(#yvwacgyuli) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -5063,7 +5113,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   width: 100%;
 }
 
-:where(#mqkuownfse) .gt_group_heading {
+:where(#yvwacgyuli) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -5089,7 +5139,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   text-align: left;
 }
 
-:where(#mqkuownfse) .gt_empty_group_heading {
+:where(#yvwacgyuli) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -5104,15 +5154,15 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   vertical-align: middle;
 }
 
-:where(#mqkuownfse) .gt_from_md > :first-child {
+:where(#yvwacgyuli) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#mqkuownfse) .gt_from_md > :last-child {
+:where(#yvwacgyuli) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#mqkuownfse) .gt_row {
+:where(#yvwacgyuli) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -5131,7 +5181,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   overflow-x: hidden;
 }
 
-:where(#mqkuownfse) .gt_stub {
+:where(#yvwacgyuli) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -5144,7 +5194,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#mqkuownfse) .gt_stub_row_group {
+:where(#yvwacgyuli) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -5158,11 +5208,11 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   vertical-align: top;
 }
 
-:where(#mqkuownfse) .gt_row_group_first td {
+:where(#yvwacgyuli) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#mqkuownfse) .gt_summary_row {
+:where(#yvwacgyuli) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -5172,16 +5222,16 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#mqkuownfse) .gt_first_summary_row {
+:where(#yvwacgyuli) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#mqkuownfse) .gt_first_summary_row.thick {
+:where(#yvwacgyuli) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#mqkuownfse) .gt_last_summary_row {
+:where(#yvwacgyuli) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -5191,7 +5241,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#mqkuownfse) .gt_grand_summary_row {
+:where(#yvwacgyuli) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -5201,7 +5251,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#mqkuownfse) .gt_first_grand_summary_row {
+:where(#yvwacgyuli) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -5211,11 +5261,11 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-top-color: #D3D3D3;
 }
 
-:where(#mqkuownfse) .gt_striped {
+:where(#yvwacgyuli) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#mqkuownfse) .gt_table_body {
+:where(#yvwacgyuli) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -5224,7 +5274,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#mqkuownfse) .gt_footnotes {
+:where(#yvwacgyuli) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -5238,7 +5288,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#mqkuownfse) .gt_footnote {
+:where(#yvwacgyuli) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -5247,7 +5297,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#mqkuownfse) .gt_sourcenotes {
+:where(#yvwacgyuli) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -5261,7 +5311,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#mqkuownfse) .gt_sourcenote {
+:where(#yvwacgyuli) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -5269,64 +5319,64 @@ lavaan is FREE software! Please report any bugs.</code></pre>
   padding-right: 5px;
 }
 
-:where(#mqkuownfse) .gt_left {
+:where(#yvwacgyuli) .gt_left {
   text-align: left;
 }
 
-:where(#mqkuownfse) .gt_center {
+:where(#yvwacgyuli) .gt_center {
   text-align: center;
 }
 
-:where(#mqkuownfse) .gt_right {
+:where(#yvwacgyuli) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#mqkuownfse) .gt_font_normal {
+:where(#yvwacgyuli) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#mqkuownfse) .gt_font_bold {
+:where(#yvwacgyuli) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#mqkuownfse) .gt_font_italic {
+:where(#yvwacgyuli) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#mqkuownfse) .gt_super {
+:where(#yvwacgyuli) .gt_super {
   font-size: 65%;
 }
 
-:where(#mqkuownfse) .gt_footnote_marks {
+:where(#yvwacgyuli) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#mqkuownfse) .gt_asterisk {
+:where(#yvwacgyuli) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#mqkuownfse) .gt_indent_1 {
+:where(#yvwacgyuli) .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#mqkuownfse) .gt_indent_2 {
+:where(#yvwacgyuli) .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#mqkuownfse) .gt_indent_3 {
+:where(#yvwacgyuli) .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#mqkuownfse) .gt_indent_4 {
+:where(#yvwacgyuli) .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#mqkuownfse) .gt_indent_5 {
+:where(#yvwacgyuli) .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -6044,6 +6094,1176 @@ lavaan is FREE software! Please report any bugs.</code></pre>
 </div>
 </div>
 </div>
+<section id="solo-carrera-con-variables-del-estudio" class="level3">
+<h3 class="anchored" data-anchor-id="solo-carrera-con-variables-del-estudio">Solo carrera con variables del estudio</h3>
+<div class="cell">
+<div class="cell-output-display">
+
+<div id="lyyhrdwtgd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+:where(#lyyhrdwtgd) .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+:where(#lyyhrdwtgd) .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#lyyhrdwtgd) .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+:where(#lyyhrdwtgd) .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+:where(#lyyhrdwtgd) .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+:where(#lyyhrdwtgd) .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#lyyhrdwtgd) .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#lyyhrdwtgd) .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+:where(#lyyhrdwtgd) .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+:where(#lyyhrdwtgd) .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+:where(#lyyhrdwtgd) .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+:where(#lyyhrdwtgd) .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+:where(#lyyhrdwtgd) .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+:where(#lyyhrdwtgd) .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+:where(#lyyhrdwtgd) .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+:where(#lyyhrdwtgd) .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+:where(#lyyhrdwtgd) .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+:where(#lyyhrdwtgd) .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#lyyhrdwtgd) .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+:where(#lyyhrdwtgd) .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+:where(#lyyhrdwtgd) .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#lyyhrdwtgd) .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+:where(#lyyhrdwtgd) .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+:where(#lyyhrdwtgd) .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#lyyhrdwtgd) .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#lyyhrdwtgd) .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+:where(#lyyhrdwtgd) .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+:where(#lyyhrdwtgd) .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#lyyhrdwtgd) .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#lyyhrdwtgd) .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#lyyhrdwtgd) .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#lyyhrdwtgd) .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#lyyhrdwtgd) .gt_left {
+  text-align: left;
+}
+
+:where(#lyyhrdwtgd) .gt_center {
+  text-align: center;
+}
+
+:where(#lyyhrdwtgd) .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+:where(#lyyhrdwtgd) .gt_font_normal {
+  font-weight: normal;
+}
+
+:where(#lyyhrdwtgd) .gt_font_bold {
+  font-weight: bold;
+}
+
+:where(#lyyhrdwtgd) .gt_font_italic {
+  font-style: italic;
+}
+
+:where(#lyyhrdwtgd) .gt_super {
+  font-size: 65%;
+}
+
+:where(#lyyhrdwtgd) .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+:where(#lyyhrdwtgd) .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+:where(#lyyhrdwtgd) .gt_indent_1 {
+  text-indent: 5px;
+}
+
+:where(#lyyhrdwtgd) .gt_indent_2 {
+  text-indent: 10px;
+}
+
+:where(#lyyhrdwtgd) .gt_indent_3 {
+  text-indent: 15px;
+}
+
+:where(#lyyhrdwtgd) .gt_indent_4 {
+  text-indent: 20px;
+}
+
+:where(#lyyhrdwtgd) .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table">
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id=" "> </th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="1">1</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="2">2</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="3">3</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="4">4</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="5">5</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="6">6</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="7">7</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="8">8</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="9">9</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="10">10</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="" class="gt_row gt_left">1. Career_Commitment</td>
+<td headers="1" class="gt_row gt_left"></td>
+<td headers="2" class="gt_row gt_right"></td>
+<td headers="3" class="gt_row gt_right"></td>
+<td headers="4" class="gt_row gt_right"></td>
+<td headers="5" class="gt_row gt_right"></td>
+<td headers="6" class="gt_row gt_right"></td>
+<td headers="7" class="gt_row gt_right"></td>
+<td headers="8" class="gt_row gt_right"></td>
+<td headers="9" class="gt_row gt_right"></td>
+<td headers="10" class="gt_row gt_right"></td></tr>
+    <tr><td headers="" class="gt_row gt_left">2. Career_Expectance</td>
+<td headers="1" class="gt_row gt_left"> .44***</td>
+<td headers="2" class="gt_row gt_right"></td>
+<td headers="3" class="gt_row gt_right"></td>
+<td headers="4" class="gt_row gt_right"></td>
+<td headers="5" class="gt_row gt_right"></td>
+<td headers="6" class="gt_row gt_right"></td>
+<td headers="7" class="gt_row gt_right"></td>
+<td headers="8" class="gt_row gt_right"></td>
+<td headers="9" class="gt_row gt_right"></td>
+<td headers="10" class="gt_row gt_right"></td></tr>
+    <tr><td headers="" class="gt_row gt_left">3. Career_Exploration</td>
+<td headers="1" class="gt_row gt_left"> .34***</td>
+<td headers="2" class="gt_row gt_right"> .25***</td>
+<td headers="3" class="gt_row gt_right"></td>
+<td headers="4" class="gt_row gt_right"></td>
+<td headers="5" class="gt_row gt_right"></td>
+<td headers="6" class="gt_row gt_right"></td>
+<td headers="7" class="gt_row gt_right"></td>
+<td headers="8" class="gt_row gt_right"></td>
+<td headers="9" class="gt_row gt_right"></td>
+<td headers="10" class="gt_row gt_right"></td></tr>
+    <tr><td headers="" class="gt_row gt_left">4. Career_Fears</td>
+<td headers="1" class="gt_row gt_left">-.09†</td>
+<td headers="2" class="gt_row gt_right">-.16**</td>
+<td headers="3" class="gt_row gt_right"> .00 </td>
+<td headers="4" class="gt_row gt_right"></td>
+<td headers="5" class="gt_row gt_right"></td>
+<td headers="6" class="gt_row gt_right"></td>
+<td headers="7" class="gt_row gt_right"></td>
+<td headers="8" class="gt_row gt_right"></td>
+<td headers="9" class="gt_row gt_right"></td>
+<td headers="10" class="gt_row gt_right"></td></tr>
+    <tr><td headers="" class="gt_row gt_left">5. Career_Hopes</td>
+<td headers="1" class="gt_row gt_left"> .29***</td>
+<td headers="2" class="gt_row gt_right"> .28***</td>
+<td headers="3" class="gt_row gt_right"> .21***</td>
+<td headers="4" class="gt_row gt_right"> .27***</td>
+<td headers="5" class="gt_row gt_right"></td>
+<td headers="6" class="gt_row gt_right"></td>
+<td headers="7" class="gt_row gt_right"></td>
+<td headers="8" class="gt_row gt_right"></td>
+<td headers="9" class="gt_row gt_right"></td>
+<td headers="10" class="gt_row gt_right"></td></tr>
+    <tr><td headers="" class="gt_row gt_left">6. Career_InternalControl</td>
+<td headers="1" class="gt_row gt_left"> .40***</td>
+<td headers="2" class="gt_row gt_right"> .36***</td>
+<td headers="3" class="gt_row gt_right"> .32***</td>
+<td headers="4" class="gt_row gt_right"> .01 </td>
+<td headers="5" class="gt_row gt_right"> .38***</td>
+<td headers="6" class="gt_row gt_right"></td>
+<td headers="7" class="gt_row gt_right"></td>
+<td headers="8" class="gt_row gt_right"></td>
+<td headers="9" class="gt_row gt_right"></td>
+<td headers="10" class="gt_row gt_right"></td></tr>
+    <tr><td headers="" class="gt_row gt_left">7. Career_Value</td>
+<td headers="1" class="gt_row gt_left"> .20***</td>
+<td headers="2" class="gt_row gt_right"> .47***</td>
+<td headers="3" class="gt_row gt_right"> .05 </td>
+<td headers="4" class="gt_row gt_right"> .04 </td>
+<td headers="5" class="gt_row gt_right"> .20***</td>
+<td headers="6" class="gt_row gt_right"> .20***</td>
+<td headers="7" class="gt_row gt_right"></td>
+<td headers="8" class="gt_row gt_right"></td>
+<td headers="9" class="gt_row gt_right"></td>
+<td headers="10" class="gt_row gt_right"></td></tr>
+    <tr><td headers="" class="gt_row gt_left">8. Goals_ExtrinsicGoals</td>
+<td headers="1" class="gt_row gt_left"> .05 </td>
+<td headers="2" class="gt_row gt_right">-.03 </td>
+<td headers="3" class="gt_row gt_right"> .11*</td>
+<td headers="4" class="gt_row gt_right"> .19***</td>
+<td headers="5" class="gt_row gt_right"> .25***</td>
+<td headers="6" class="gt_row gt_right"> .11*</td>
+<td headers="7" class="gt_row gt_right"> .04 </td>
+<td headers="8" class="gt_row gt_right"></td>
+<td headers="9" class="gt_row gt_right"></td>
+<td headers="10" class="gt_row gt_right"></td></tr>
+    <tr><td headers="" class="gt_row gt_left">9. Goals_IntrinsicGoals</td>
+<td headers="1" class="gt_row gt_left"> .30***</td>
+<td headers="2" class="gt_row gt_right"> .27***</td>
+<td headers="3" class="gt_row gt_right"> .31***</td>
+<td headers="4" class="gt_row gt_right"> .07 </td>
+<td headers="5" class="gt_row gt_right"> .31***</td>
+<td headers="6" class="gt_row gt_right"> .45***</td>
+<td headers="7" class="gt_row gt_right"> .28***</td>
+<td headers="8" class="gt_row gt_right"> .26***</td>
+<td headers="9" class="gt_row gt_right"></td>
+<td headers="10" class="gt_row gt_right"></td></tr>
+    <tr><td headers="" class="gt_row gt_left">10. LifeSatisfaction</td>
+<td headers="1" class="gt_row gt_left"> .46***</td>
+<td headers="2" class="gt_row gt_right"> .53***</td>
+<td headers="3" class="gt_row gt_right"> .34***</td>
+<td headers="4" class="gt_row gt_right">-.16**</td>
+<td headers="5" class="gt_row gt_right"> .30***</td>
+<td headers="6" class="gt_row gt_right"> .37***</td>
+<td headers="7" class="gt_row gt_right"> .18***</td>
+<td headers="8" class="gt_row gt_right"> .06 </td>
+<td headers="9" class="gt_row gt_right"> .37***</td>
+<td headers="10" class="gt_row gt_right"></td></tr>
+    <tr><td headers="" class="gt_row gt_left">M</td>
+<td headers="1" class="gt_row gt_left">4.16</td>
+<td headers="2" class="gt_row gt_right">3.78</td>
+<td headers="3" class="gt_row gt_right">3.70</td>
+<td headers="4" class="gt_row gt_right">3.45</td>
+<td headers="5" class="gt_row gt_right">4.10</td>
+<td headers="6" class="gt_row gt_right">4.44</td>
+<td headers="7" class="gt_row gt_right">4.23</td>
+<td headers="8" class="gt_row gt_right">3.12</td>
+<td headers="9" class="gt_row gt_right">4.42</td>
+<td headers="10" class="gt_row gt_right">4.87</td></tr>
+    <tr><td headers="" class="gt_row gt_left">SD</td>
+<td headers="1" class="gt_row gt_left">0.63</td>
+<td headers="2" class="gt_row gt_right">0.71</td>
+<td headers="3" class="gt_row gt_right">0.58</td>
+<td headers="4" class="gt_row gt_right">1.00</td>
+<td headers="5" class="gt_row gt_right">0.64</td>
+<td headers="6" class="gt_row gt_right">0.53</td>
+<td headers="7" class="gt_row gt_right">1.02</td>
+<td headers="8" class="gt_row gt_right">0.70</td>
+<td headers="9" class="gt_row gt_right">0.52</td>
+<td headers="10" class="gt_row gt_right">1.09</td></tr>
+    <tr><td headers="" class="gt_row gt_left">n</td>
+<td headers="1" class="gt_row gt_left">385</td>
+<td headers="2" class="gt_row gt_right">386</td>
+<td headers="3" class="gt_row gt_right">385</td>
+<td headers="4" class="gt_row gt_right">377</td>
+<td headers="5" class="gt_row gt_right">380</td>
+<td headers="6" class="gt_row gt_right">386</td>
+<td headers="7" class="gt_row gt_right">380</td>
+<td headers="8" class="gt_row gt_right">376</td>
+<td headers="9" class="gt_row gt_right">376</td>
+<td headers="10" class="gt_row gt_right">373</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="solo-familia-con-variables-del-estudio" class="level3">
+<h3 class="anchored" data-anchor-id="solo-familia-con-variables-del-estudio">Solo familia con variables del estudio</h3>
+<div class="cell">
+<div class="cell-output-display">
+
+<div id="cgxvpfmvws" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+:where(#cgxvpfmvws) .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+:where(#cgxvpfmvws) .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#cgxvpfmvws) .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+:where(#cgxvpfmvws) .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+:where(#cgxvpfmvws) .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+:where(#cgxvpfmvws) .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#cgxvpfmvws) .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#cgxvpfmvws) .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+:where(#cgxvpfmvws) .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+:where(#cgxvpfmvws) .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+:where(#cgxvpfmvws) .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+:where(#cgxvpfmvws) .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+:where(#cgxvpfmvws) .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+:where(#cgxvpfmvws) .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+:where(#cgxvpfmvws) .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+:where(#cgxvpfmvws) .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+:where(#cgxvpfmvws) .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+:where(#cgxvpfmvws) .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#cgxvpfmvws) .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+:where(#cgxvpfmvws) .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+:where(#cgxvpfmvws) .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#cgxvpfmvws) .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+:where(#cgxvpfmvws) .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+:where(#cgxvpfmvws) .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#cgxvpfmvws) .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#cgxvpfmvws) .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+:where(#cgxvpfmvws) .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+:where(#cgxvpfmvws) .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#cgxvpfmvws) .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#cgxvpfmvws) .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#cgxvpfmvws) .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#cgxvpfmvws) .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#cgxvpfmvws) .gt_left {
+  text-align: left;
+}
+
+:where(#cgxvpfmvws) .gt_center {
+  text-align: center;
+}
+
+:where(#cgxvpfmvws) .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+:where(#cgxvpfmvws) .gt_font_normal {
+  font-weight: normal;
+}
+
+:where(#cgxvpfmvws) .gt_font_bold {
+  font-weight: bold;
+}
+
+:where(#cgxvpfmvws) .gt_font_italic {
+  font-style: italic;
+}
+
+:where(#cgxvpfmvws) .gt_super {
+  font-size: 65%;
+}
+
+:where(#cgxvpfmvws) .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+:where(#cgxvpfmvws) .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+:where(#cgxvpfmvws) .gt_indent_1 {
+  text-indent: 5px;
+}
+
+:where(#cgxvpfmvws) .gt_indent_2 {
+  text-indent: 10px;
+}
+
+:where(#cgxvpfmvws) .gt_indent_3 {
+  text-indent: 15px;
+}
+
+:where(#cgxvpfmvws) .gt_indent_4 {
+  text-indent: 20px;
+}
+
+:where(#cgxvpfmvws) .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table">
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id=" "> </th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="1">1</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="2">2</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="3">3</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="4">4</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="5">5</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="6">6</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="7">7</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="8">8</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="9">9</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="10">10</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="" class="gt_row gt_left">1. Family_Commitment</td>
+<td headers="1" class="gt_row gt_right"></td>
+<td headers="2" class="gt_row gt_right"></td>
+<td headers="3" class="gt_row gt_right"></td>
+<td headers="4" class="gt_row gt_left"></td>
+<td headers="5" class="gt_row gt_right"></td>
+<td headers="6" class="gt_row gt_right"></td>
+<td headers="7" class="gt_row gt_right"></td>
+<td headers="8" class="gt_row gt_right"></td>
+<td headers="9" class="gt_row gt_right"></td>
+<td headers="10" class="gt_row gt_right"></td></tr>
+    <tr><td headers="" class="gt_row gt_left">2. Family_Expectance</td>
+<td headers="1" class="gt_row gt_right"> .66***</td>
+<td headers="2" class="gt_row gt_right"></td>
+<td headers="3" class="gt_row gt_right"></td>
+<td headers="4" class="gt_row gt_left"></td>
+<td headers="5" class="gt_row gt_right"></td>
+<td headers="6" class="gt_row gt_right"></td>
+<td headers="7" class="gt_row gt_right"></td>
+<td headers="8" class="gt_row gt_right"></td>
+<td headers="9" class="gt_row gt_right"></td>
+<td headers="10" class="gt_row gt_right"></td></tr>
+    <tr><td headers="" class="gt_row gt_left">3. Family_Exploration</td>
+<td headers="1" class="gt_row gt_right"> .59***</td>
+<td headers="2" class="gt_row gt_right"> .49***</td>
+<td headers="3" class="gt_row gt_right"></td>
+<td headers="4" class="gt_row gt_left"></td>
+<td headers="5" class="gt_row gt_right"></td>
+<td headers="6" class="gt_row gt_right"></td>
+<td headers="7" class="gt_row gt_right"></td>
+<td headers="8" class="gt_row gt_right"></td>
+<td headers="9" class="gt_row gt_right"></td>
+<td headers="10" class="gt_row gt_right"></td></tr>
+    <tr><td headers="" class="gt_row gt_left">4. Family_Fears</td>
+<td headers="1" class="gt_row gt_right"> .27***</td>
+<td headers="2" class="gt_row gt_right"> .25***</td>
+<td headers="3" class="gt_row gt_right"> .39***</td>
+<td headers="4" class="gt_row gt_left"></td>
+<td headers="5" class="gt_row gt_right"></td>
+<td headers="6" class="gt_row gt_right"></td>
+<td headers="7" class="gt_row gt_right"></td>
+<td headers="8" class="gt_row gt_right"></td>
+<td headers="9" class="gt_row gt_right"></td>
+<td headers="10" class="gt_row gt_right"></td></tr>
+    <tr><td headers="" class="gt_row gt_left">5. Family_Hopes</td>
+<td headers="1" class="gt_row gt_right"> .64***</td>
+<td headers="2" class="gt_row gt_right"> .62***</td>
+<td headers="3" class="gt_row gt_right"> .53***</td>
+<td headers="4" class="gt_row gt_left"> .50***</td>
+<td headers="5" class="gt_row gt_right"></td>
+<td headers="6" class="gt_row gt_right"></td>
+<td headers="7" class="gt_row gt_right"></td>
+<td headers="8" class="gt_row gt_right"></td>
+<td headers="9" class="gt_row gt_right"></td>
+<td headers="10" class="gt_row gt_right"></td></tr>
+    <tr><td headers="" class="gt_row gt_left">6. Family_InternalControl</td>
+<td headers="1" class="gt_row gt_right"> .46***</td>
+<td headers="2" class="gt_row gt_right"> .50***</td>
+<td headers="3" class="gt_row gt_right"> .49***</td>
+<td headers="4" class="gt_row gt_left"> .27***</td>
+<td headers="5" class="gt_row gt_right"> .48***</td>
+<td headers="6" class="gt_row gt_right"></td>
+<td headers="7" class="gt_row gt_right"></td>
+<td headers="8" class="gt_row gt_right"></td>
+<td headers="9" class="gt_row gt_right"></td>
+<td headers="10" class="gt_row gt_right"></td></tr>
+    <tr><td headers="" class="gt_row gt_left">7. Family_Value</td>
+<td headers="1" class="gt_row gt_right"> .44***</td>
+<td headers="2" class="gt_row gt_right"> .66***</td>
+<td headers="3" class="gt_row gt_right"> .36***</td>
+<td headers="4" class="gt_row gt_left"> .34***</td>
+<td headers="5" class="gt_row gt_right"> .52***</td>
+<td headers="6" class="gt_row gt_right"> .42***</td>
+<td headers="7" class="gt_row gt_right"></td>
+<td headers="8" class="gt_row gt_right"></td>
+<td headers="9" class="gt_row gt_right"></td>
+<td headers="10" class="gt_row gt_right"></td></tr>
+    <tr><td headers="" class="gt_row gt_left">8. Goals_ExtrinsicGoals</td>
+<td headers="1" class="gt_row gt_right"> .07 </td>
+<td headers="2" class="gt_row gt_right"> .08 </td>
+<td headers="3" class="gt_row gt_right"> .07 </td>
+<td headers="4" class="gt_row gt_left"> .18***</td>
+<td headers="5" class="gt_row gt_right"> .18***</td>
+<td headers="6" class="gt_row gt_right"> .15**</td>
+<td headers="7" class="gt_row gt_right"> .07 </td>
+<td headers="8" class="gt_row gt_right"></td>
+<td headers="9" class="gt_row gt_right"></td>
+<td headers="10" class="gt_row gt_right"></td></tr>
+    <tr><td headers="" class="gt_row gt_left">9. Goals_IntrinsicGoals</td>
+<td headers="1" class="gt_row gt_right"> .18***</td>
+<td headers="2" class="gt_row gt_right"> .31***</td>
+<td headers="3" class="gt_row gt_right"> .17**</td>
+<td headers="4" class="gt_row gt_left"> .10†</td>
+<td headers="5" class="gt_row gt_right"> .26***</td>
+<td headers="6" class="gt_row gt_right"> .35***</td>
+<td headers="7" class="gt_row gt_right"> .34***</td>
+<td headers="8" class="gt_row gt_right"> .26***</td>
+<td headers="9" class="gt_row gt_right"></td>
+<td headers="10" class="gt_row gt_right"></td></tr>
+    <tr><td headers="" class="gt_row gt_left">10. LifeSatisfaction</td>
+<td headers="1" class="gt_row gt_right"> .27***</td>
+<td headers="2" class="gt_row gt_right"> .43***</td>
+<td headers="3" class="gt_row gt_right"> .23***</td>
+<td headers="4" class="gt_row gt_left">-.06 </td>
+<td headers="5" class="gt_row gt_right"> .23***</td>
+<td headers="6" class="gt_row gt_right"> .30***</td>
+<td headers="7" class="gt_row gt_right"> .23***</td>
+<td headers="8" class="gt_row gt_right"> .06 </td>
+<td headers="9" class="gt_row gt_right"> .37***</td>
+<td headers="10" class="gt_row gt_right"></td></tr>
+    <tr><td headers="" class="gt_row gt_left">M</td>
+<td headers="1" class="gt_row gt_right">3.20</td>
+<td headers="2" class="gt_row gt_right">3.43</td>
+<td headers="3" class="gt_row gt_right">3.04</td>
+<td headers="4" class="gt_row gt_left">2.52</td>
+<td headers="5" class="gt_row gt_right">3.11</td>
+<td headers="6" class="gt_row gt_right">3.97</td>
+<td headers="7" class="gt_row gt_right">3.82</td>
+<td headers="8" class="gt_row gt_right">3.12</td>
+<td headers="9" class="gt_row gt_right">4.42</td>
+<td headers="10" class="gt_row gt_right">4.87</td></tr>
+    <tr><td headers="" class="gt_row gt_left">SD</td>
+<td headers="1" class="gt_row gt_right">1.13</td>
+<td headers="2" class="gt_row gt_right">0.82</td>
+<td headers="3" class="gt_row gt_right">0.95</td>
+<td headers="4" class="gt_row gt_left">1.09</td>
+<td headers="5" class="gt_row gt_right">1.18</td>
+<td headers="6" class="gt_row gt_right">0.83</td>
+<td headers="7" class="gt_row gt_right">1.06</td>
+<td headers="8" class="gt_row gt_right">0.70</td>
+<td headers="9" class="gt_row gt_right">0.52</td>
+<td headers="10" class="gt_row gt_right">1.09</td></tr>
+    <tr><td headers="" class="gt_row gt_left">n</td>
+<td headers="1" class="gt_row gt_right">385</td>
+<td headers="2" class="gt_row gt_right">385</td>
+<td headers="3" class="gt_row gt_right">384</td>
+<td headers="4" class="gt_row gt_left">375</td>
+<td headers="5" class="gt_row gt_right">377</td>
+<td headers="6" class="gt_row gt_right">383</td>
+<td headers="7" class="gt_row gt_right">366</td>
+<td headers="8" class="gt_row gt_right">376</td>
+<td headers="9" class="gt_row gt_right">376</td>
+<td headers="10" class="gt_row gt_right">373</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+</section>
 <section id="análisis-de-normalidad-de-las-variables" class="level3">
 <h3 class="anchored" data-anchor-id="análisis-de-normalidad-de-las-variables">Análisis de Normalidad de las Variables</h3>
 <div class="cell">
@@ -6068,7 +7288,7 @@ lavaan is FREE software! Please report any bugs.</code></pre>
 <span id="cb25-19"><a href="#cb25-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">ifelse</span>(p_value <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="fu">paste0</span>(<span class="st">"p = "</span>, p_value), <span class="st">"p &lt; .001"</span>), <span class="at">x =</span> <span class="dv">5</span>, <span class="at">y =</span> <span class="cn">Inf</span>), <span class="at">hjust =</span> .<span class="dv">5</span>, <span class="at">vjust =</span> <span class="fl">2.5</span>, <span class="at">check_overlap =</span> <span class="cn">TRUE</span>, <span class="at">data =</span> alphas_ks_test, <span class="at">size =</span> <span class="dv">3</span>)<span class="sc">+</span></span>
 <span id="cb25-20"><a href="#cb25-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">""</span>, <span class="at">y =</span> <span class="st">""</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="reanalisis_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid" width="1440"></p>
+<p><img src="reanalisis_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid" width="1440"></p>
 </div>
 </div>
 </section>
@@ -6196,12 +7416,12 @@ variances are negative</code></pre>
 <div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>fit <span class="sc">|&gt;</span> <span class="fu">get_gt_table_sem</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="ubdnzrpkna" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="lfuoooxlso" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#ubdnzrpkna) .gt_table {
+:where(#lfuoooxlso) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -6226,7 +7446,7 @@ variances are negative</code></pre>
   border-left-color: #D3D3D3;
 }
 
-:where(#ubdnzrpkna) .gt_heading {
+:where(#lfuoooxlso) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -6238,12 +7458,12 @@ variances are negative</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#ubdnzrpkna) .gt_caption {
+:where(#lfuoooxlso) .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-:where(#ubdnzrpkna) .gt_title {
+:where(#lfuoooxlso) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -6255,7 +7475,7 @@ variances are negative</code></pre>
   border-bottom-width: 0;
 }
 
-:where(#ubdnzrpkna) .gt_subtitle {
+:where(#lfuoooxlso) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -6267,13 +7487,13 @@ variances are negative</code></pre>
   border-top-width: 0;
 }
 
-:where(#ubdnzrpkna) .gt_bottom_border {
+:where(#lfuoooxlso) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#ubdnzrpkna) .gt_col_headings {
+:where(#lfuoooxlso) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -6288,7 +7508,7 @@ variances are negative</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#ubdnzrpkna) .gt_col_heading {
+:where(#lfuoooxlso) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -6308,7 +7528,7 @@ variances are negative</code></pre>
   overflow-x: hidden;
 }
 
-:where(#ubdnzrpkna) .gt_column_spanner_outer {
+:where(#lfuoooxlso) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -6320,15 +7540,15 @@ variances are negative</code></pre>
   padding-right: 4px;
 }
 
-:where(#ubdnzrpkna) .gt_column_spanner_outer:first-child {
+:where(#lfuoooxlso) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#ubdnzrpkna) .gt_column_spanner_outer:last-child {
+:where(#lfuoooxlso) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#ubdnzrpkna) .gt_column_spanner {
+:where(#lfuoooxlso) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -6340,7 +7560,7 @@ variances are negative</code></pre>
   width: 100%;
 }
 
-:where(#ubdnzrpkna) .gt_group_heading {
+:where(#lfuoooxlso) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -6366,7 +7586,7 @@ variances are negative</code></pre>
   text-align: left;
 }
 
-:where(#ubdnzrpkna) .gt_empty_group_heading {
+:where(#lfuoooxlso) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -6381,15 +7601,15 @@ variances are negative</code></pre>
   vertical-align: middle;
 }
 
-:where(#ubdnzrpkna) .gt_from_md > :first-child {
+:where(#lfuoooxlso) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#ubdnzrpkna) .gt_from_md > :last-child {
+:where(#lfuoooxlso) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#ubdnzrpkna) .gt_row {
+:where(#lfuoooxlso) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -6408,7 +7628,7 @@ variances are negative</code></pre>
   overflow-x: hidden;
 }
 
-:where(#ubdnzrpkna) .gt_stub {
+:where(#lfuoooxlso) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -6421,7 +7641,7 @@ variances are negative</code></pre>
   padding-right: 5px;
 }
 
-:where(#ubdnzrpkna) .gt_stub_row_group {
+:where(#lfuoooxlso) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -6435,11 +7655,11 @@ variances are negative</code></pre>
   vertical-align: top;
 }
 
-:where(#ubdnzrpkna) .gt_row_group_first td {
+:where(#lfuoooxlso) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#ubdnzrpkna) .gt_summary_row {
+:where(#lfuoooxlso) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -6449,16 +7669,16 @@ variances are negative</code></pre>
   padding-right: 5px;
 }
 
-:where(#ubdnzrpkna) .gt_first_summary_row {
+:where(#lfuoooxlso) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#ubdnzrpkna) .gt_first_summary_row.thick {
+:where(#lfuoooxlso) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#ubdnzrpkna) .gt_last_summary_row {
+:where(#lfuoooxlso) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -6468,7 +7688,7 @@ variances are negative</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#ubdnzrpkna) .gt_grand_summary_row {
+:where(#lfuoooxlso) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -6478,7 +7698,7 @@ variances are negative</code></pre>
   padding-right: 5px;
 }
 
-:where(#ubdnzrpkna) .gt_first_grand_summary_row {
+:where(#lfuoooxlso) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -6488,11 +7708,11 @@ variances are negative</code></pre>
   border-top-color: #D3D3D3;
 }
 
-:where(#ubdnzrpkna) .gt_striped {
+:where(#lfuoooxlso) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#ubdnzrpkna) .gt_table_body {
+:where(#lfuoooxlso) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -6501,7 +7721,7 @@ variances are negative</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#ubdnzrpkna) .gt_footnotes {
+:where(#lfuoooxlso) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -6515,7 +7735,7 @@ variances are negative</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#ubdnzrpkna) .gt_footnote {
+:where(#lfuoooxlso) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -6524,7 +7744,7 @@ variances are negative</code></pre>
   padding-right: 5px;
 }
 
-:where(#ubdnzrpkna) .gt_sourcenotes {
+:where(#lfuoooxlso) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -6538,7 +7758,7 @@ variances are negative</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#ubdnzrpkna) .gt_sourcenote {
+:where(#lfuoooxlso) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -6546,64 +7766,64 @@ variances are negative</code></pre>
   padding-right: 5px;
 }
 
-:where(#ubdnzrpkna) .gt_left {
+:where(#lfuoooxlso) .gt_left {
   text-align: left;
 }
 
-:where(#ubdnzrpkna) .gt_center {
+:where(#lfuoooxlso) .gt_center {
   text-align: center;
 }
 
-:where(#ubdnzrpkna) .gt_right {
+:where(#lfuoooxlso) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#ubdnzrpkna) .gt_font_normal {
+:where(#lfuoooxlso) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#ubdnzrpkna) .gt_font_bold {
+:where(#lfuoooxlso) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#ubdnzrpkna) .gt_font_italic {
+:where(#lfuoooxlso) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#ubdnzrpkna) .gt_super {
+:where(#lfuoooxlso) .gt_super {
   font-size: 65%;
 }
 
-:where(#ubdnzrpkna) .gt_footnote_marks {
+:where(#lfuoooxlso) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#ubdnzrpkna) .gt_asterisk {
+:where(#lfuoooxlso) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#ubdnzrpkna) .gt_indent_1 {
+:where(#lfuoooxlso) .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#ubdnzrpkna) .gt_indent_2 {
+:where(#lfuoooxlso) .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#ubdnzrpkna) .gt_indent_3 {
+:where(#lfuoooxlso) .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#ubdnzrpkna) .gt_indent_4 {
+:where(#lfuoooxlso) .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#ubdnzrpkna) .gt_indent_5 {
+:where(#lfuoooxlso) .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -6759,12 +7979,12 @@ variances are negative</code></pre>
 <span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a>fit <span class="sc">|&gt;</span> <span class="fu">get_gt_table_sem</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="yhytwxnojn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="qzlyjryqjk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#yhytwxnojn) .gt_table {
+:where(#qzlyjryqjk) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -6789,7 +8009,7 @@ variances are negative</code></pre>
   border-left-color: #D3D3D3;
 }
 
-:where(#yhytwxnojn) .gt_heading {
+:where(#qzlyjryqjk) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -6801,12 +8021,12 @@ variances are negative</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#yhytwxnojn) .gt_caption {
+:where(#qzlyjryqjk) .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-:where(#yhytwxnojn) .gt_title {
+:where(#qzlyjryqjk) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -6818,7 +8038,7 @@ variances are negative</code></pre>
   border-bottom-width: 0;
 }
 
-:where(#yhytwxnojn) .gt_subtitle {
+:where(#qzlyjryqjk) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -6830,13 +8050,13 @@ variances are negative</code></pre>
   border-top-width: 0;
 }
 
-:where(#yhytwxnojn) .gt_bottom_border {
+:where(#qzlyjryqjk) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#yhytwxnojn) .gt_col_headings {
+:where(#qzlyjryqjk) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -6851,7 +8071,7 @@ variances are negative</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#yhytwxnojn) .gt_col_heading {
+:where(#qzlyjryqjk) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -6871,7 +8091,7 @@ variances are negative</code></pre>
   overflow-x: hidden;
 }
 
-:where(#yhytwxnojn) .gt_column_spanner_outer {
+:where(#qzlyjryqjk) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -6883,15 +8103,15 @@ variances are negative</code></pre>
   padding-right: 4px;
 }
 
-:where(#yhytwxnojn) .gt_column_spanner_outer:first-child {
+:where(#qzlyjryqjk) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#yhytwxnojn) .gt_column_spanner_outer:last-child {
+:where(#qzlyjryqjk) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#yhytwxnojn) .gt_column_spanner {
+:where(#qzlyjryqjk) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -6903,7 +8123,7 @@ variances are negative</code></pre>
   width: 100%;
 }
 
-:where(#yhytwxnojn) .gt_group_heading {
+:where(#qzlyjryqjk) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -6929,7 +8149,7 @@ variances are negative</code></pre>
   text-align: left;
 }
 
-:where(#yhytwxnojn) .gt_empty_group_heading {
+:where(#qzlyjryqjk) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -6944,15 +8164,15 @@ variances are negative</code></pre>
   vertical-align: middle;
 }
 
-:where(#yhytwxnojn) .gt_from_md > :first-child {
+:where(#qzlyjryqjk) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#yhytwxnojn) .gt_from_md > :last-child {
+:where(#qzlyjryqjk) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#yhytwxnojn) .gt_row {
+:where(#qzlyjryqjk) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -6971,7 +8191,7 @@ variances are negative</code></pre>
   overflow-x: hidden;
 }
 
-:where(#yhytwxnojn) .gt_stub {
+:where(#qzlyjryqjk) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -6984,7 +8204,7 @@ variances are negative</code></pre>
   padding-right: 5px;
 }
 
-:where(#yhytwxnojn) .gt_stub_row_group {
+:where(#qzlyjryqjk) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -6998,11 +8218,11 @@ variances are negative</code></pre>
   vertical-align: top;
 }
 
-:where(#yhytwxnojn) .gt_row_group_first td {
+:where(#qzlyjryqjk) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#yhytwxnojn) .gt_summary_row {
+:where(#qzlyjryqjk) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -7012,16 +8232,16 @@ variances are negative</code></pre>
   padding-right: 5px;
 }
 
-:where(#yhytwxnojn) .gt_first_summary_row {
+:where(#qzlyjryqjk) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#yhytwxnojn) .gt_first_summary_row.thick {
+:where(#qzlyjryqjk) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#yhytwxnojn) .gt_last_summary_row {
+:where(#qzlyjryqjk) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -7031,7 +8251,7 @@ variances are negative</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#yhytwxnojn) .gt_grand_summary_row {
+:where(#qzlyjryqjk) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -7041,7 +8261,7 @@ variances are negative</code></pre>
   padding-right: 5px;
 }
 
-:where(#yhytwxnojn) .gt_first_grand_summary_row {
+:where(#qzlyjryqjk) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -7051,11 +8271,11 @@ variances are negative</code></pre>
   border-top-color: #D3D3D3;
 }
 
-:where(#yhytwxnojn) .gt_striped {
+:where(#qzlyjryqjk) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#yhytwxnojn) .gt_table_body {
+:where(#qzlyjryqjk) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -7064,7 +8284,7 @@ variances are negative</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#yhytwxnojn) .gt_footnotes {
+:where(#qzlyjryqjk) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -7078,7 +8298,7 @@ variances are negative</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#yhytwxnojn) .gt_footnote {
+:where(#qzlyjryqjk) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -7087,7 +8307,7 @@ variances are negative</code></pre>
   padding-right: 5px;
 }
 
-:where(#yhytwxnojn) .gt_sourcenotes {
+:where(#qzlyjryqjk) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -7101,7 +8321,7 @@ variances are negative</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#yhytwxnojn) .gt_sourcenote {
+:where(#qzlyjryqjk) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -7109,64 +8329,64 @@ variances are negative</code></pre>
   padding-right: 5px;
 }
 
-:where(#yhytwxnojn) .gt_left {
+:where(#qzlyjryqjk) .gt_left {
   text-align: left;
 }
 
-:where(#yhytwxnojn) .gt_center {
+:where(#qzlyjryqjk) .gt_center {
   text-align: center;
 }
 
-:where(#yhytwxnojn) .gt_right {
+:where(#qzlyjryqjk) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#yhytwxnojn) .gt_font_normal {
+:where(#qzlyjryqjk) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#yhytwxnojn) .gt_font_bold {
+:where(#qzlyjryqjk) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#yhytwxnojn) .gt_font_italic {
+:where(#qzlyjryqjk) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#yhytwxnojn) .gt_super {
+:where(#qzlyjryqjk) .gt_super {
   font-size: 65%;
 }
 
-:where(#yhytwxnojn) .gt_footnote_marks {
+:where(#qzlyjryqjk) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#yhytwxnojn) .gt_asterisk {
+:where(#qzlyjryqjk) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#yhytwxnojn) .gt_indent_1 {
+:where(#qzlyjryqjk) .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#yhytwxnojn) .gt_indent_2 {
+:where(#qzlyjryqjk) .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#yhytwxnojn) .gt_indent_3 {
+:where(#qzlyjryqjk) .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#yhytwxnojn) .gt_indent_4 {
+:where(#qzlyjryqjk) .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#yhytwxnojn) .gt_indent_5 {
+:where(#qzlyjryqjk) .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -7271,12 +8491,12 @@ variances are negative</code></pre>
 <span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a>fit <span class="sc">|&gt;</span> <span class="fu">get_gt_table_sem</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="mvcrrkffmt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="tkyhlrhfnz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#mvcrrkffmt) .gt_table {
+:where(#tkyhlrhfnz) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -7301,7 +8521,7 @@ variances are negative</code></pre>
   border-left-color: #D3D3D3;
 }
 
-:where(#mvcrrkffmt) .gt_heading {
+:where(#tkyhlrhfnz) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -7313,12 +8533,12 @@ variances are negative</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#mvcrrkffmt) .gt_caption {
+:where(#tkyhlrhfnz) .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-:where(#mvcrrkffmt) .gt_title {
+:where(#tkyhlrhfnz) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -7330,7 +8550,7 @@ variances are negative</code></pre>
   border-bottom-width: 0;
 }
 
-:where(#mvcrrkffmt) .gt_subtitle {
+:where(#tkyhlrhfnz) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -7342,13 +8562,13 @@ variances are negative</code></pre>
   border-top-width: 0;
 }
 
-:where(#mvcrrkffmt) .gt_bottom_border {
+:where(#tkyhlrhfnz) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#mvcrrkffmt) .gt_col_headings {
+:where(#tkyhlrhfnz) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -7363,7 +8583,7 @@ variances are negative</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#mvcrrkffmt) .gt_col_heading {
+:where(#tkyhlrhfnz) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -7383,7 +8603,7 @@ variances are negative</code></pre>
   overflow-x: hidden;
 }
 
-:where(#mvcrrkffmt) .gt_column_spanner_outer {
+:where(#tkyhlrhfnz) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -7395,15 +8615,15 @@ variances are negative</code></pre>
   padding-right: 4px;
 }
 
-:where(#mvcrrkffmt) .gt_column_spanner_outer:first-child {
+:where(#tkyhlrhfnz) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#mvcrrkffmt) .gt_column_spanner_outer:last-child {
+:where(#tkyhlrhfnz) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#mvcrrkffmt) .gt_column_spanner {
+:where(#tkyhlrhfnz) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -7415,7 +8635,7 @@ variances are negative</code></pre>
   width: 100%;
 }
 
-:where(#mvcrrkffmt) .gt_group_heading {
+:where(#tkyhlrhfnz) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -7441,7 +8661,7 @@ variances are negative</code></pre>
   text-align: left;
 }
 
-:where(#mvcrrkffmt) .gt_empty_group_heading {
+:where(#tkyhlrhfnz) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -7456,15 +8676,15 @@ variances are negative</code></pre>
   vertical-align: middle;
 }
 
-:where(#mvcrrkffmt) .gt_from_md > :first-child {
+:where(#tkyhlrhfnz) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#mvcrrkffmt) .gt_from_md > :last-child {
+:where(#tkyhlrhfnz) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#mvcrrkffmt) .gt_row {
+:where(#tkyhlrhfnz) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -7483,7 +8703,7 @@ variances are negative</code></pre>
   overflow-x: hidden;
 }
 
-:where(#mvcrrkffmt) .gt_stub {
+:where(#tkyhlrhfnz) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -7496,7 +8716,7 @@ variances are negative</code></pre>
   padding-right: 5px;
 }
 
-:where(#mvcrrkffmt) .gt_stub_row_group {
+:where(#tkyhlrhfnz) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -7510,11 +8730,11 @@ variances are negative</code></pre>
   vertical-align: top;
 }
 
-:where(#mvcrrkffmt) .gt_row_group_first td {
+:where(#tkyhlrhfnz) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#mvcrrkffmt) .gt_summary_row {
+:where(#tkyhlrhfnz) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -7524,16 +8744,16 @@ variances are negative</code></pre>
   padding-right: 5px;
 }
 
-:where(#mvcrrkffmt) .gt_first_summary_row {
+:where(#tkyhlrhfnz) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#mvcrrkffmt) .gt_first_summary_row.thick {
+:where(#tkyhlrhfnz) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#mvcrrkffmt) .gt_last_summary_row {
+:where(#tkyhlrhfnz) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -7543,7 +8763,7 @@ variances are negative</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#mvcrrkffmt) .gt_grand_summary_row {
+:where(#tkyhlrhfnz) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -7553,7 +8773,7 @@ variances are negative</code></pre>
   padding-right: 5px;
 }
 
-:where(#mvcrrkffmt) .gt_first_grand_summary_row {
+:where(#tkyhlrhfnz) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -7563,11 +8783,11 @@ variances are negative</code></pre>
   border-top-color: #D3D3D3;
 }
 
-:where(#mvcrrkffmt) .gt_striped {
+:where(#tkyhlrhfnz) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#mvcrrkffmt) .gt_table_body {
+:where(#tkyhlrhfnz) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -7576,7 +8796,7 @@ variances are negative</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#mvcrrkffmt) .gt_footnotes {
+:where(#tkyhlrhfnz) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -7590,7 +8810,7 @@ variances are negative</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#mvcrrkffmt) .gt_footnote {
+:where(#tkyhlrhfnz) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -7599,7 +8819,7 @@ variances are negative</code></pre>
   padding-right: 5px;
 }
 
-:where(#mvcrrkffmt) .gt_sourcenotes {
+:where(#tkyhlrhfnz) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -7613,7 +8833,7 @@ variances are negative</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#mvcrrkffmt) .gt_sourcenote {
+:where(#tkyhlrhfnz) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -7621,64 +8841,64 @@ variances are negative</code></pre>
   padding-right: 5px;
 }
 
-:where(#mvcrrkffmt) .gt_left {
+:where(#tkyhlrhfnz) .gt_left {
   text-align: left;
 }
 
-:where(#mvcrrkffmt) .gt_center {
+:where(#tkyhlrhfnz) .gt_center {
   text-align: center;
 }
 
-:where(#mvcrrkffmt) .gt_right {
+:where(#tkyhlrhfnz) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#mvcrrkffmt) .gt_font_normal {
+:where(#tkyhlrhfnz) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#mvcrrkffmt) .gt_font_bold {
+:where(#tkyhlrhfnz) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#mvcrrkffmt) .gt_font_italic {
+:where(#tkyhlrhfnz) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#mvcrrkffmt) .gt_super {
+:where(#tkyhlrhfnz) .gt_super {
   font-size: 65%;
 }
 
-:where(#mvcrrkffmt) .gt_footnote_marks {
+:where(#tkyhlrhfnz) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#mvcrrkffmt) .gt_asterisk {
+:where(#tkyhlrhfnz) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#mvcrrkffmt) .gt_indent_1 {
+:where(#tkyhlrhfnz) .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#mvcrrkffmt) .gt_indent_2 {
+:where(#tkyhlrhfnz) .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#mvcrrkffmt) .gt_indent_3 {
+:where(#tkyhlrhfnz) .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#mvcrrkffmt) .gt_indent_4 {
+:where(#tkyhlrhfnz) .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#mvcrrkffmt) .gt_indent_5 {
+:where(#tkyhlrhfnz) .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -7776,12 +8996,12 @@ variances are negative</code></pre>
 <div class="cell">
 <div class="cell-output-display">
 
-<div id="nvgsdqmuhu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="mbsoycubig" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#nvgsdqmuhu) .gt_table {
+:where(#mbsoycubig) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -7806,7 +9026,7 @@ variances are negative</code></pre>
   border-left-color: #D3D3D3;
 }
 
-:where(#nvgsdqmuhu) .gt_heading {
+:where(#mbsoycubig) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -7818,12 +9038,12 @@ variances are negative</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#nvgsdqmuhu) .gt_caption {
+:where(#mbsoycubig) .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-:where(#nvgsdqmuhu) .gt_title {
+:where(#mbsoycubig) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -7835,7 +9055,7 @@ variances are negative</code></pre>
   border-bottom-width: 0;
 }
 
-:where(#nvgsdqmuhu) .gt_subtitle {
+:where(#mbsoycubig) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -7847,13 +9067,13 @@ variances are negative</code></pre>
   border-top-width: 0;
 }
 
-:where(#nvgsdqmuhu) .gt_bottom_border {
+:where(#mbsoycubig) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#nvgsdqmuhu) .gt_col_headings {
+:where(#mbsoycubig) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -7868,7 +9088,7 @@ variances are negative</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#nvgsdqmuhu) .gt_col_heading {
+:where(#mbsoycubig) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -7888,7 +9108,7 @@ variances are negative</code></pre>
   overflow-x: hidden;
 }
 
-:where(#nvgsdqmuhu) .gt_column_spanner_outer {
+:where(#mbsoycubig) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -7900,15 +9120,15 @@ variances are negative</code></pre>
   padding-right: 4px;
 }
 
-:where(#nvgsdqmuhu) .gt_column_spanner_outer:first-child {
+:where(#mbsoycubig) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#nvgsdqmuhu) .gt_column_spanner_outer:last-child {
+:where(#mbsoycubig) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#nvgsdqmuhu) .gt_column_spanner {
+:where(#mbsoycubig) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -7920,7 +9140,7 @@ variances are negative</code></pre>
   width: 100%;
 }
 
-:where(#nvgsdqmuhu) .gt_group_heading {
+:where(#mbsoycubig) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -7946,7 +9166,7 @@ variances are negative</code></pre>
   text-align: left;
 }
 
-:where(#nvgsdqmuhu) .gt_empty_group_heading {
+:where(#mbsoycubig) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -7961,15 +9181,15 @@ variances are negative</code></pre>
   vertical-align: middle;
 }
 
-:where(#nvgsdqmuhu) .gt_from_md > :first-child {
+:where(#mbsoycubig) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#nvgsdqmuhu) .gt_from_md > :last-child {
+:where(#mbsoycubig) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#nvgsdqmuhu) .gt_row {
+:where(#mbsoycubig) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -7988,7 +9208,7 @@ variances are negative</code></pre>
   overflow-x: hidden;
 }
 
-:where(#nvgsdqmuhu) .gt_stub {
+:where(#mbsoycubig) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -8001,7 +9221,7 @@ variances are negative</code></pre>
   padding-right: 5px;
 }
 
-:where(#nvgsdqmuhu) .gt_stub_row_group {
+:where(#mbsoycubig) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -8015,11 +9235,11 @@ variances are negative</code></pre>
   vertical-align: top;
 }
 
-:where(#nvgsdqmuhu) .gt_row_group_first td {
+:where(#mbsoycubig) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#nvgsdqmuhu) .gt_summary_row {
+:where(#mbsoycubig) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -8029,16 +9249,16 @@ variances are negative</code></pre>
   padding-right: 5px;
 }
 
-:where(#nvgsdqmuhu) .gt_first_summary_row {
+:where(#mbsoycubig) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#nvgsdqmuhu) .gt_first_summary_row.thick {
+:where(#mbsoycubig) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#nvgsdqmuhu) .gt_last_summary_row {
+:where(#mbsoycubig) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -8048,7 +9268,7 @@ variances are negative</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#nvgsdqmuhu) .gt_grand_summary_row {
+:where(#mbsoycubig) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -8058,7 +9278,7 @@ variances are negative</code></pre>
   padding-right: 5px;
 }
 
-:where(#nvgsdqmuhu) .gt_first_grand_summary_row {
+:where(#mbsoycubig) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -8068,11 +9288,11 @@ variances are negative</code></pre>
   border-top-color: #D3D3D3;
 }
 
-:where(#nvgsdqmuhu) .gt_striped {
+:where(#mbsoycubig) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#nvgsdqmuhu) .gt_table_body {
+:where(#mbsoycubig) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -8081,7 +9301,7 @@ variances are negative</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#nvgsdqmuhu) .gt_footnotes {
+:where(#mbsoycubig) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -8095,7 +9315,7 @@ variances are negative</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#nvgsdqmuhu) .gt_footnote {
+:where(#mbsoycubig) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -8104,7 +9324,7 @@ variances are negative</code></pre>
   padding-right: 5px;
 }
 
-:where(#nvgsdqmuhu) .gt_sourcenotes {
+:where(#mbsoycubig) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -8118,7 +9338,7 @@ variances are negative</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#nvgsdqmuhu) .gt_sourcenote {
+:where(#mbsoycubig) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -8126,64 +9346,64 @@ variances are negative</code></pre>
   padding-right: 5px;
 }
 
-:where(#nvgsdqmuhu) .gt_left {
+:where(#mbsoycubig) .gt_left {
   text-align: left;
 }
 
-:where(#nvgsdqmuhu) .gt_center {
+:where(#mbsoycubig) .gt_center {
   text-align: center;
 }
 
-:where(#nvgsdqmuhu) .gt_right {
+:where(#mbsoycubig) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#nvgsdqmuhu) .gt_font_normal {
+:where(#mbsoycubig) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#nvgsdqmuhu) .gt_font_bold {
+:where(#mbsoycubig) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#nvgsdqmuhu) .gt_font_italic {
+:where(#mbsoycubig) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#nvgsdqmuhu) .gt_super {
+:where(#mbsoycubig) .gt_super {
   font-size: 65%;
 }
 
-:where(#nvgsdqmuhu) .gt_footnote_marks {
+:where(#mbsoycubig) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#nvgsdqmuhu) .gt_asterisk {
+:where(#mbsoycubig) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#nvgsdqmuhu) .gt_indent_1 {
+:where(#mbsoycubig) .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#nvgsdqmuhu) .gt_indent_2 {
+:where(#mbsoycubig) .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#nvgsdqmuhu) .gt_indent_3 {
+:where(#mbsoycubig) .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#nvgsdqmuhu) .gt_indent_4 {
+:where(#mbsoycubig) .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#nvgsdqmuhu) .gt_indent_5 {
+:where(#mbsoycubig) .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -8496,12 +9716,12 @@ variances are negative</code></pre>
 <div class="cell">
 <div class="cell-output-display">
 
-<div id="pewvdwumya" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="uigfkekxro" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#pewvdwumya) .gt_table {
+:where(#uigfkekxro) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -8526,7 +9746,7 @@ variances are negative</code></pre>
   border-left-color: #D3D3D3;
 }
 
-:where(#pewvdwumya) .gt_heading {
+:where(#uigfkekxro) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -8538,12 +9758,12 @@ variances are negative</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#pewvdwumya) .gt_caption {
+:where(#uigfkekxro) .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-:where(#pewvdwumya) .gt_title {
+:where(#uigfkekxro) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -8555,7 +9775,7 @@ variances are negative</code></pre>
   border-bottom-width: 0;
 }
 
-:where(#pewvdwumya) .gt_subtitle {
+:where(#uigfkekxro) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -8567,13 +9787,13 @@ variances are negative</code></pre>
   border-top-width: 0;
 }
 
-:where(#pewvdwumya) .gt_bottom_border {
+:where(#uigfkekxro) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#pewvdwumya) .gt_col_headings {
+:where(#uigfkekxro) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -8588,7 +9808,7 @@ variances are negative</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#pewvdwumya) .gt_col_heading {
+:where(#uigfkekxro) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -8608,7 +9828,7 @@ variances are negative</code></pre>
   overflow-x: hidden;
 }
 
-:where(#pewvdwumya) .gt_column_spanner_outer {
+:where(#uigfkekxro) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -8620,15 +9840,15 @@ variances are negative</code></pre>
   padding-right: 4px;
 }
 
-:where(#pewvdwumya) .gt_column_spanner_outer:first-child {
+:where(#uigfkekxro) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#pewvdwumya) .gt_column_spanner_outer:last-child {
+:where(#uigfkekxro) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#pewvdwumya) .gt_column_spanner {
+:where(#uigfkekxro) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -8640,7 +9860,7 @@ variances are negative</code></pre>
   width: 100%;
 }
 
-:where(#pewvdwumya) .gt_group_heading {
+:where(#uigfkekxro) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -8666,7 +9886,7 @@ variances are negative</code></pre>
   text-align: left;
 }
 
-:where(#pewvdwumya) .gt_empty_group_heading {
+:where(#uigfkekxro) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -8681,15 +9901,15 @@ variances are negative</code></pre>
   vertical-align: middle;
 }
 
-:where(#pewvdwumya) .gt_from_md > :first-child {
+:where(#uigfkekxro) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#pewvdwumya) .gt_from_md > :last-child {
+:where(#uigfkekxro) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#pewvdwumya) .gt_row {
+:where(#uigfkekxro) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -8708,7 +9928,7 @@ variances are negative</code></pre>
   overflow-x: hidden;
 }
 
-:where(#pewvdwumya) .gt_stub {
+:where(#uigfkekxro) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -8721,7 +9941,7 @@ variances are negative</code></pre>
   padding-right: 5px;
 }
 
-:where(#pewvdwumya) .gt_stub_row_group {
+:where(#uigfkekxro) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -8735,11 +9955,11 @@ variances are negative</code></pre>
   vertical-align: top;
 }
 
-:where(#pewvdwumya) .gt_row_group_first td {
+:where(#uigfkekxro) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#pewvdwumya) .gt_summary_row {
+:where(#uigfkekxro) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -8749,16 +9969,16 @@ variances are negative</code></pre>
   padding-right: 5px;
 }
 
-:where(#pewvdwumya) .gt_first_summary_row {
+:where(#uigfkekxro) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#pewvdwumya) .gt_first_summary_row.thick {
+:where(#uigfkekxro) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#pewvdwumya) .gt_last_summary_row {
+:where(#uigfkekxro) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -8768,7 +9988,7 @@ variances are negative</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#pewvdwumya) .gt_grand_summary_row {
+:where(#uigfkekxro) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -8778,7 +9998,7 @@ variances are negative</code></pre>
   padding-right: 5px;
 }
 
-:where(#pewvdwumya) .gt_first_grand_summary_row {
+:where(#uigfkekxro) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -8788,11 +10008,11 @@ variances are negative</code></pre>
   border-top-color: #D3D3D3;
 }
 
-:where(#pewvdwumya) .gt_striped {
+:where(#uigfkekxro) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#pewvdwumya) .gt_table_body {
+:where(#uigfkekxro) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -8801,7 +10021,7 @@ variances are negative</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#pewvdwumya) .gt_footnotes {
+:where(#uigfkekxro) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -8815,7 +10035,7 @@ variances are negative</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#pewvdwumya) .gt_footnote {
+:where(#uigfkekxro) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -8824,7 +10044,7 @@ variances are negative</code></pre>
   padding-right: 5px;
 }
 
-:where(#pewvdwumya) .gt_sourcenotes {
+:where(#uigfkekxro) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -8838,7 +10058,7 @@ variances are negative</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#pewvdwumya) .gt_sourcenote {
+:where(#uigfkekxro) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -8846,64 +10066,64 @@ variances are negative</code></pre>
   padding-right: 5px;
 }
 
-:where(#pewvdwumya) .gt_left {
+:where(#uigfkekxro) .gt_left {
   text-align: left;
 }
 
-:where(#pewvdwumya) .gt_center {
+:where(#uigfkekxro) .gt_center {
   text-align: center;
 }
 
-:where(#pewvdwumya) .gt_right {
+:where(#uigfkekxro) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#pewvdwumya) .gt_font_normal {
+:where(#uigfkekxro) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#pewvdwumya) .gt_font_bold {
+:where(#uigfkekxro) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#pewvdwumya) .gt_font_italic {
+:where(#uigfkekxro) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#pewvdwumya) .gt_super {
+:where(#uigfkekxro) .gt_super {
   font-size: 65%;
 }
 
-:where(#pewvdwumya) .gt_footnote_marks {
+:where(#uigfkekxro) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#pewvdwumya) .gt_asterisk {
+:where(#uigfkekxro) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#pewvdwumya) .gt_indent_1 {
+:where(#uigfkekxro) .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#pewvdwumya) .gt_indent_2 {
+:where(#uigfkekxro) .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#pewvdwumya) .gt_indent_3 {
+:where(#uigfkekxro) .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#pewvdwumya) .gt_indent_4 {
+:where(#uigfkekxro) .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#pewvdwumya) .gt_indent_5 {
+:where(#uigfkekxro) .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
